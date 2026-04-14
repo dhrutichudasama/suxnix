@@ -1,0 +1,217 @@
+.shop-btn {
+    background-color: #f59e0b;
+}
+
+/* Water layer */
+.shop-btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #0D9B4D;
+    transition: all 0.5s ease;
+    border-radius: 99999px;
+    z-index: 1;
+}
+
+/* Hover effect */
+.shop-btn:hover::before {
+    bottom: 0;
+}
+
+#searchModal {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><text x="0" y="20" font-size="20">✕</text></svg>') 16 16, auto;
+}
+
+/* brand names */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.animate-scroll {
+    animation: scroll 30s linear infinite;
+    width: max-content;
+}
+
+/* NAV LINKS */
+.nav-link {
+    color: #6b7280;
+    /* text-gray */
+    font-weight: 600;
+    font-size: 15.5px;
+    letter-spacing: 0.5px;
+    transition: 0.3s;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: #202427;
+}
+
+/* DROPDOWN BASE */
+.dropdown {
+    position: absolute;
+    top: 120%;
+    left: 0;
+    min-width: 180px;
+    background: #fff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    padding: 10px 0;
+    border-radius: 6px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: 0.3s;
+    z-index: 999;
+}
+
+/* SHOW ON HOVER */
+.group:hover .dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* DROPDOWN LINKS */
+.dropdown a {
+    display: block;
+    padding: 10px 18px;
+    font-size: 14px;
+    color: #444;
+    transition: 0.3s;
+}
+
+.dropdown a:hover {
+    background: #f3f4f6;
+    color: #16a34a;
+}
+
+.dots-bg {
+    background-image: radial-gradient(#b8bbbd 2px, transparent 2px);
+    background-size: 35px 35px;
+}
+
+.product-circle {
+    background: radial-gradient(circle, rgba(12, 168, 93, 0.08) 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+/* Slider Styles */
+.slider-track {
+    display: flex;
+    transition: transform 0.6s ease;
+}
+
+.slide {
+    flex-shrink: 0;
+    padding: 0 15px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #d1d5db;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dot.active {
+    background-color: #f89a20;
+    transform: scale(1.4);
+}
+
+.nav-arrow {
+    width: 50px;
+    height: 50px;
+    background-color: #e6f7ef;
+    color: #0ca85d;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-arrow:hover {
+    background-color: #0ca85d;
+    color: white;
+}
+
+/* play button */
+.glow {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(34, 197, 94, 0.25);
+    /* green */
+    animation: pulseGlow 2.5s infinite ease-out;
+}
+
+/* Different sizes = layered effect */
+.glow1 {
+    width: 120px;
+    height: 120px;
+    animation-delay: 0s;
+}
+
+.glow2 {
+    width: 160px;
+    height: 160px;
+    animation-delay: 0.5s;
+}
+
+.glow3 {
+    width: 200px;
+    height: 200px;
+    animation-delay: 1s;
+}
+
+@keyframes pulseGlow {
+    0% {
+        transform: scale(0.8);
+        opacity: 0.6;
+    }
+
+    70% {
+        transform: scale(1.2);
+        opacity: 0.2;
+    }
+
+    100% {
+        transform: scale(1.4);
+        opacity: 0;
+    }
+}
+
+/* counter circle animation  */
+.progress {
+    transition: stroke-dashoffset 1.5s ease;
+    transform: rotate(-90deg);
+    transform-origin: center;
+}
+
+/* footer */
+/* Hide scrollbar */
+.auto-scroll {
+    overflow: hidden;
+}
+
+/* Animation */
+@keyframes scrollX {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.auto-scroll {
+    animation: scrollX 20s linear infinite;
+}

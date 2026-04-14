@@ -1,0 +1,1560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suxnix - Power Supplement</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    screens: {
+                        'desk': '1020px',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#0ca85d',
+                        secondary: '#f89a20',
+                        textGray: '#666a71',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="assets/style/style.css">
+</head>
+
+<body class="font-sans antialiased bg-[#fdfdfd] pt-[100px] overflow-y-auto">
+
+    <!-- Header -->
+    <div id="header"></div>
+
+    <section class="hero-section relative w-full pt-16 md:pt-24 lg:pt-32 overflow-hidden flex flex-col items-center">
+        <!-- Side Shapes -->
+        <div
+            class="absolute left-0 top-[20%] md:top-[15%] w-24 md:w-48 lg:w-auto opacity-50 md:opacity-100 z-0 pointer-events-none">
+            <img src="assets/images/banner_shape_left.webp" alt="Left Leaf" class="w-full h-auto drop-shadow-xl">
+        </div>
+        <div
+            class="absolute right-0 top-[20%] md:top-[17%] w-24 md:w-48 lg:w-auto opacity-50 md:opacity-100 z-0 pointer-events-none">
+            <img src="assets/images/banner_shape_right.avif" alt="Right Leaf" class="w-full h-auto drop-shadow-xl">
+        </div>
+
+        <div class="container relative z-10 mx-auto px-4 text-center pb-8 md:pb-12">
+            <!-- Subheading -->
+            <h4
+                class="text-secondary font-bold tracking-[0.1em] md:tracking-[0.15em] uppercase text-sm md:text-[13px] mb-4 md:mb-6">
+                .. Increased energy with suxnix ..
+            </h4>
+
+            <!-- Main Heading -->
+            <h1
+                class="text-5xl md:text-7xl lg:text-[55px] leading-[1.05] font-bold text-[#202427] uppercase mx-auto max-w-4xl tracking-[-0.02em]">
+                Mix protein provided<br> way to growth
+            </h1>
+        </div>
+
+        <!-- Button & Round Background Container -->
+        <div class="relative w-full flex justify-center z-10 flex-col items-center mt-4">
+
+            <!-- Button -->
+            <div class="absolute z-20 top-[-25px] md:top-[-35px]">
+                <a href="#" class="shop-btn relative overflow-hidden inline-flex items-center justify-center 
+                    text-white font-semibold text-lg px-10 md:px-12 py-3 md:py-4 rounded-full 
+                    border-[4px] md:border-[5px] border-white shadow-md hover:shadow-lg">
+
+                    <span class="relative z-10">Shop Now</span>
+
+                </a>
+            </div>
+
+            <!-- Green Round Element -->
+            <img src="assets/images/banner_round_bg.webp" alt="Banner Base Shape"
+                class="w-[90%] md:w-full max-w-[760px] lg:max-w-[960px] relative z-10 object-contain ">
+
+            <!-- Center Image (NEW) -->
+            <img src="assets/images/banner_img01.webp" alt="Center Image"
+                class="absolute z-30  left-1/2 top-[63%] 
+                -translate-x-1/2 -translate-y-1/2 w-[50%] md:w-[45%] lg:w-[36%] h-auto max-h-[110%] object-contain drop-shadow-4xl">
+
+            <!-- LEFT Bottom Shape -->
+            <img src="assets/images/banner_shape03.avif"
+                class="absolute bottom-0 left-[40px] z-0 w-[100px] md:w-[140px] lg:w-[170px] object-contain">
+
+            <!-- RIGHT Bottom Shape -->
+            <img src="assets/images/banner_shape04.avif"
+                class="absolute bottom-0 right-[60px] z-20 w-[100px] md:w-[140px] lg:w-[170px] object-contain">
+
+        </div>
+    </section>
+
+    <section class="py-20 lg:py-28 bg-white overflow-hidden">
+        <div class="w-full px-6 lg:px-12 text-center">
+
+            <!-- Heading -->
+            <div class="flex items-center justify-center gap-4 mb-16 lg:mb-20">
+                <span class="w-12 h-[2px] bg-orange-400"></span>
+                <p class="text-lg font-semibold text-[#202427] uppercase tracking-wide">
+                    Perfect Brand is Featured on
+                </p>
+                <span class="w-12 h-[2px] bg-orange-400"></span>
+            </div>
+
+            <!-- Scrolling Logos -->
+            <div class="relative w-full overflow-hidden">
+                <div class="flex items-center gap-16 lg:gap-22 animate-scroll">
+
+                    <!-- Logos -->
+                    <img src="assets/images/brand_01.png" class="h-8 object-contain" />
+                    <img src="assets/images/brand_02.webp" class="h-8 object-contain" />
+                    <img src="assets/images/brand_03.webp" class="h-8 object-contain" />
+                    <img src="assets/images/brand_03.webp" class="h-8 object-contain" />
+                    <img src="assets/images/brand_04.webp" class="h-8 object-contain" />
+                    <img src="assets/images/brand_05.webp" class="h-8 object-contain" />
+                    <img src="assets/images/brand_06.webp" class="h-8 object-contain" />
+
+                    <!-- Duplicate for seamless loop -->
+                    <img src="assets/images/brand_01.png" class="h-8 object-contain" />
+                    <img src="assets/images/brand_02.webp" class="h-8 object-contain" />
+                    <img src="assets/images/brand_03.webp" class="h-8 object-contain" />
+                    <img src="assets/images/brand_04.webp" class="h-8 object-contain" />
+                    <img src="assets/images/brand_05.webp" class="h-8 object-contain" />
+                    <img src="assets/images/brand_06.webp" class="h-8 object-contain" />
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="Features relative w-full bg-[#0E9D4D] pt-24 pb-24 md:pt-32 md:pb-32 mt-10">
+        <!-- Top torn edge -->
+        <div class="absolute -top-[1px] left-0 w-full overflow-hidden leading-[0] z-20 hidden md:block">
+            <svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 40" preserveAspectRatio="none"
+                class="w-full h-[15px] md:h-[25px]">
+                <path
+                    d="M0 0V20l5 -3 l5 -8l5 7 l5 3l5 -5 l5 4l5 8 l5 8l5 6 l5 -3l5 -3 l5 8l5 2 l5 -2l5 3 l5 5l5 -3 l5 -5l5 7 l5 4l5 -8 l5 8l5 2 l5 -1l5 -1 l5 8l5 -2 l5 6l5 4 l5 -2l5 5 l5 -5l5 4 l5 -5l5 -3 l5 -7l5 -1 l5 -8l5 -6 l5 -3l5 2 l5 -3l5 5 l5 -1l5 6 l5 -10l5 -4 l5 -2l5 -10 l5 -8l5 9 l5 8l5 -3 l5 -6l5 -9 l5 -6l5 8 l5 -7l5 -3 l5 -7l5 9 l5 -6l5 7 l5 -10l5 1 l5 2l5 8 l5 -4l5 -7 l5 -1l5 3 l5 4l5 -6 l5 1l5 -3 l5 9l5 7 l5 6l5 0 l5 -6l5 3 l5 5l5 8 l5 -3l5 5 l5 1l5 -1 l5 8l5 9 l5 1l5 -3 l5 -3l5 -8 l5 -2l5 -10 l5 -2l5 9 l5 7l5 7 l5 -1l5 -10 l5 -2l5 9 l5 1l5 -10 l5 4l5 -7 l5 -2l5 -8 l5 9l5 -9 l5 1l5 2 l5 9l5 -3 l5 -3l5 0 l5 8l5 2 l5 -5l5 3 l5 2l5 -7 l5 -2l5 3 l5 -3l5 -6 l5 -5l5 5 l5 5l5 -2 l5 -2l5 2 l5 -2l5 -3 l5 5l5 1 l5 9l5 -4 l5 -6l5 6 l5 -6l5 7 l5 8l5 4 l5 -2l5 1 l5 -7l5 4 l5 -3l5 -7 l5 -9l5 2 l5 2l5 0 l5 -1l5 -3 l5 -7l5 -2 l5 -2l5 0 l5 -9l5 -10 l5 7l5 4 l5 -6l5 -10 l5 -4l5 8 l5 0l5 -3 l5 -2l5 5 l5 6l5 -6 l5 0l5 0 l5 1l5 7 l5 3l5 -10 l5 -7l5 -5 l5 9l5 7 l5 -1l5 -10 l5 5l5 2 l5 -4l5 6 l5 -9l5 -8 l5 -9l5 9 l5 -2l5 9 l5 -5l5 8 l5 1l5 -5 l5 0l5 -8 l5 -3l5 -1 l5 4l5 -2 l5 -9l5 -1 l5 -4l5 9 l5 -7l5 1 l5 -5l5 0 l5 -8l5 5 l5 -2l5 4 l5 -8l5 2 l5 2l5 -7 l5 -3l5 -8 l5 0l5 4 l5 5l5 -8 l5 -1l5 -8 l5 5l5 -2 l5 5l5 0 l5 -2l5 -7 l5 1l5 -9 l5 2V0H0z">
+                </path>
+            </svg>
+        </div>
+
+        <div class="mx-auto px-4 sm:px-6 lg:px-8 max-w-[1400px] relative z-30">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-20">
+                <!-- Left Side: Features Grid -->
+                <div
+                    class="w-full lg:w-[60%] grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-x-8 md:gap-y-16 pl-0 lg:pl-10 xl:pl-20">
+
+                    <!-- Feature 1 -->
+                    <div class="feature-item flex flex-col items-start text-white group max-w-[300px]">
+                        <!-- Icon -->
+                        <div class="relative mb-6">
+                            <!-- Green Circle (background) -->
+                            <div class="absolute w-[44px] h-[44px] bg-[#1ec777] rounded-full top-2 z-0 
+                                            left-3 transition-all duration-300 ease-in-out group-hover:left-2">
+                            </div>
+                            <!-- Icon -->
+                            <svg class="w-[46px] h-[46px] relative z-10 text-[#f1d02c] stroke-current 
+                                transition-all duration-300 group-hover:scale-110 group-hover:-translate-y-1"
+                                fill="none" viewBox="0 0 24 24" stroke-width="1.8">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M11.9 4.3a4.5 4.5 0 00-6.1 1 5.3 5.3 0 00-.8 6.4c1.1 2.3 3.6 4.6 6.9 7 3.3-2.4 5.8-4.7 6.9-7a5.3 5.3 0 00-.8-6.4 4.5 4.5 0 00-6.1-1z" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3 13h18 M6 13v2 M10 13v2 M14 13v2 M18 13v2" />
+                            </svg>
+                        </div>
+
+                        <!-- Title -->
+                        <h3 class="text-[18px] sm:text-[20px] font-bold uppercase tracking-wide mb-3">
+                            Multi Fruits Flavour
+                        </h3>
+
+                        <!-- Description -->
+                        <p class="text-[15px] text-white/80 leading-relaxed">
+                            A thing added to something else in order to complete or enhance it.
+                        </p>
+
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="feature-item flex flex-col items-start text-white group">
+                        <div class="relative inline-flex mb-5">
+                            <div class="absolute inset-0 bg-[#16b568] rounded-full w-[40px] h-[40px] left-3 top-2 z-0">
+                            </div>
+                            <svg class="w-[42px] h-[42px] relative z-10 text-[#f1d02c] stroke-current group-hover:scale-110 transition-transform duration-300"
+                                fill="none" viewBox="0 0 24 24" stroke-width="1.8">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9.75 3h4.5m-2.25 0v8.2l-4.5 7.5A1.5 1.5 0 0 0 8.79 21h6.42a1.5 1.5 0 0 0 1.28-2.3l-4.5-7.5V3" />
+                                <circle cx="10" cy="18" r="0.8" fill="currentColor" />
+                                <circle cx="14" cy="17" r="1.2" fill="currentColor" />
+                                <circle cx="12" cy="15" r="0.9" fill="currentColor" />
+                            </svg>
+                        </div>
+                        <h3
+                            class="text-[17px] sm:text-[19px] font-bold tracking-wide uppercase mb-2 text-white font-sans">
+                            Flower Formula</h3>
+                        <p class="text-[14.5px] text-white/90 leading-relaxed max-w-[280px]">
+                            A thing added to something else in order to complete or enhance it.
+                        </p>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="feature-item flex flex-col items-start text-white group">
+                        <div class="relative inline-flex mb-5">
+                            <div class="absolute inset-0 bg-[#16b568] rounded-full w-[40px] h-[40px] left-3 top-2 z-0">
+                            </div>
+                            <svg class="w-[42px] h-[42px] relative z-10 text-[#f1d02c] stroke-current group-hover:scale-110 transition-transform duration-300"
+                                fill="none" viewBox="0 0 24 24" stroke-width="1.8">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M8 8V5a2 2 0 012-2h4a2 2 0 012 2v3m-6 0h4m-7 5a6 6 0 1012 0 6 6 0 00-12 0z" />
+                                <circle cx="12" cy="14" r="1.5" fill="currentColor" stroke="none" />
+                            </svg>
+                        </div>
+                        <h3
+                            class="text-[17px] sm:text-[19px] font-bold tracking-wide uppercase mb-2 text-white font-sans">
+                            Fishbone Diagram</h3>
+                        <p class="text-[14.5px] text-white/90 leading-relaxed max-w-[280px]">
+                            A thing added to something else in order to complete or enhance it.
+                        </p>
+                    </div>
+
+                    <!-- Feature 4 -->
+                    <div class="feature-item flex flex-col items-start text-white group">
+                        <div class="relative inline-flex mb-5">
+                            <div class="absolute inset-0 bg-[#16b568] rounded-full w-[40px] h-[40px] left-3 top-2 z-0">
+                            </div>
+                            <svg class="w-[42px] h-[42px] relative z-10 text-[#f1d02c] stroke-current group-hover:scale-110 transition-transform duration-300"
+                                fill="none" viewBox="0 0 24 24" stroke-width="1.8">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M6 8c2.5 0 3.5 1.5 3.5 4S8.5 16 6 16M18 8c-2.5 0-3.5 1.5-3.5 4s1 4 3.5 4" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9.5 4v16m5-16v16" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 2l.8 1.6L14.4 4l-1.6.8L12 6l-.8-1.6L9.6 4l1.6-.8z" />
+                            </svg>
+                        </div>
+                        <h3
+                            class="text-[17px] sm:text-[19px] font-bold tracking-wide uppercase mb-2 text-white font-sans">
+                            100% Fat Blasting</h3>
+                        <p class="text-[14.5px] text-white/90 leading-relaxed max-w-[280px]">
+                            A thing added to something else in order to complete or enhance it.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- Right Side: Image -->
+                <div class="w-full lg:w-[40%] flex justify-center lg:justify-end mt-4 lg:mt-0 relative pr-0 lg:pr-10">
+                    <div class="relative max-w-[500px] w-full flex items-center justify-center">
+                        <img src="assets/images/features_img.webp" alt="Features Bowl Image"
+                            class="relative z-10 w-full h-auto object-contain drop-shadow-[0_20px_45px_rgba(0,0,0,0.15)]">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Bottom torn edge -->
+        <div class="absolute -bottom-[1px] left-0 w-full overflow-hidden leading-[0] z-20 hidden md:block rotate-180">
+            <svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 40" preserveAspectRatio="none"
+                class="w-full h-[15px] md:h-[25px]">
+                <path
+                    d="M0 0V20l5 -3 l5 -8l5 7 l5 3l5 -5 l5 4l5 8 l5 8l5 6 l5 -3l5 -3 l5 8l5 2 l5 -2l5 3 l5 5l5 -3 l5 -5l5 7 l5 4l5 -8 l5 8l5 2 l5 -1l5 -1 l5 8l5 -2 l5 6l5 4 l5 -2l5 5 l5 -5l5 4 l5 -5l5 -3 l5 -7l5 -1 l5 -8l5 -6 l5 -3l5 2 l5 -3l5 5 l5 -1l5 6 l5 -10l5 -4 l5 -2l5 -10 l5 -8l5 9 l5 8l5 -3 l5 -6l5 -9 l5 -6l5 8 l5 -7l5 -3 l5 -7l5 9 l5 -6l5 7 l5 -10l5 1 l5 2l5 8 l5 -4l5 -7 l5 -1l5 3 l5 4l5 -6 l5 1l5 -3 l5 9l5 7 l5 6l5 0 l5 -6l5 3 l5 5l5 8 l5 -3l5 5 l5 1l5 -1 l5 8l5 9 l5 1l5 -3 l5 -3l5 -8 l5 -2l5 -10 l5 -2l5 9 l5 7l5 7 l5 -1l5 -10 l5 -2l5 9 l5 1l5 -10 l5 4l5 -7 l5 -2l5 -8 l5 9l5 -9 l5 1l5 2 l5 9l5 -3 l5 -3l5 0 l5 8l5 2 l5 -5l5 3 l5 2l5 -7 l5 -2l5 3 l5 -3l5 -6 l5 -5l5 5 l5 5l5 -2 l5 -2l5 2 l5 -2l5 -3 l5 5l5 1 l5 9l5 -4 l5 -6l5 6 l5 -6l5 7 l5 8l5 4 l5 -2l5 1 l5 -7l5 4 l5 -3l5 -7 l5 -9l5 2 l5 2l5 0 l5 -1l5 -3 l5 -7l5 -2 l5 -2l5 0 l5 -9l5 -10 l5 7l5 4 l5 -6l5 -10 l5 -4l5 8 l5 0l5 -3 l5 -2l5 5 l5 6l5 -6 l5 0l5 0 l5 1l5 7 l5 3l5 -10 l5 -7l5 -5 l5 9l5 7 l5 -1l5 -10 l5 5l5 2 l5 -4l5 6 l5 -9l5 -8 l5 -9l5 9 l5 -2l5 9 l5 -5l5 8 l5 1l5 -5 l5 0l5 -8 l5 -3l5 -1 l5 4l5 -2 l5 -9l5 -1 l5 -4l5 9 l5 -7l5 1 l5 -5l5 0 l5 -8l5 5 l5 -2l5 4 l5 -8l5 2 l5 2l5 -7 l5 -3l5 -8 l5 0l5 4 l5 5l5 -8 l5 -1l5 -8 l5 5l5 -2 l5 5l5 0 l5 -2l5 -7 l5 1l5 -9 l5 2V0H0z">
+                </path>
+            </svg>
+        </div>
+    </section>
+
+
+    <!-- Product Promo Section 01 -->
+    <section class="py-8 lg:py-10 bg-white relative overflow-hidden">
+        <!-- RIGHT SIDE BACKGROUND SHAPE -->
+        <div
+            class="absolute top-1/2 right-0 -translate-y-1/2 w-[120px] lg:w-[250px] z-0 pointer-events-none flex justify-end">
+            <img src="assets/images/banner_shape_product.jpg" class="h-[200px] w-auto object-contain" alt="">
+        </div>
+
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
+
+                <!-- LEFT COLUMN: IMAGE -->
+                <div class="w-full lg:w-1/2 relative flex justify-center items-center group">
+
+                    <!-- DECORATIVE SHAPE -->
+                    <div class="absolute left-[50px] top-2/3 -translate-y-1/2 z-0 w-[150px] lg:w-[300px]">
+                        <img src="assets/images/features_product_shape01.webp" class="w-full h-auto transform transition-all duration-700 ease-in-out 
+                            -translate-x-1/3 group-hover:-translate-x-[20%]" alt="">
+                    </div>
+
+                    <!-- Dotted Pattern Layer -->
+                    <div class="absolute inset-x-0 inset-y-0 dots-bg h-full w-full opacity-40 z-0"></div>
+
+                    <!-- PRODUCT IMAGE -->
+                    <div class="relative z-10 p-8">
+                        <img src="assets/images/features_product01.webp"
+                            class="w-full max-w-[500px] h-auto drop-shadow-2xl">
+                    </div>
+
+                </div>
+
+                <!-- RIGHT COLUMN: CONTENT -->
+                <div class="w-full lg:w-1/2 relative">
+
+                    <div class="relative z-10 text-center lg:text-left">
+                        <h2 class="text-5xl md:text-6xl lg:text-[40px] font-bold text-[#202427] mb-8 uppercase">
+                            Serious Mass
+                        </h2>
+
+                        <h4
+                            class="text-sm font-bold text-gray-800 mb-6 flex items-center justify-center lg:justify-start gap-3">
+                            High-strength, 5000IU
+                        </h4>
+
+                        <p class="text-gray-600 text-[14px] leading-relaxed mb-10 max-w-[500px] mx-auto lg:mx-0">
+                            Vitamin D3 supplements are commonly recommended for people at risk for vitamin D
+                            deficiency.
+                            Low vitamin D levels cause depression, fatigue, and muscle weakness.
+                        </p>
+
+                        <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-8">
+                            <!-- Button -->
+                            <a href="#" class="shop-btn relative overflow-hidden inline-flex items-center justify-center 
+                                    text-white font-semibold text-lg px-10 md:px-12 py-3 md:py-4 rounded-full 
+                                    shadow-md hover:shadow-lg">
+                                <span class="relative z-10">Shop Now</span>
+                            </a>
+
+                            <div class="flex items-center gap-4">
+                                <span class="text-3xl font-bold text-[#202427]">$89.99</span>
+                                <span class="text-2xl text-orange-400 line-through font-semibold">$117.99</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Promo Section 02 -->
+    <section class="py-8 lg:py-10 bg-white relative overflow-hidden">
+
+        <!-- LEFT SIDE BACKGROUND SHAPE -->
+        <div
+            class="absolute top-1/2 left-0 -translate-y-1/2 w-[120px] lg:w-[250px] z-0 pointer-events-none flex justify-start">
+            <img src="assets/images/banner_shape_product.jpg" class="h-[200px] w-auto object-contain rotate-180" alt="">
+        </div>
+
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="flex flex-col lg:flex-row-reverse items-center gap-16 lg:gap-24">
+
+                <!-- RIGHT COLUMN: IMAGE -->
+                <div class="w-full lg:w-1/2 relative flex justify-center items-center group">
+
+                    <!-- DECORATIVE SHAPE -->
+                    <div class="absolute right-[50px] top-2/3 -translate-y-1/2 z-0 w-[150px] lg:w-[300px]">
+                        <img src="assets/images/features_product_shape02.avif" class="w-full h-auto transform transition-all duration-700 ease-in-out 
+                            translate-x-1/3 group-hover:translate-x-[20%]" alt="">
+                    </div>
+
+                    <!-- Dotted Pattern Layer -->
+                    <div class="absolute inset-x-0 inset-y-0 dots-bg h-full w-full opacity-40 z-0"></div>
+
+                    <!-- PRODUCT IMAGE -->
+                    <div class="relative z-10 p-8">
+                        <img src="assets/images/features_product02.webp"
+                            class="w-full max-w-[500px] h-auto drop-shadow-2xl">
+                    </div>
+
+                </div>
+
+                <!-- LEFT COLUMN: CONTENT -->
+                <div class="w-full lg:w-1/2 relative">
+
+                    <div class="relative z-10 text-center lg:text-left">
+                        <h2 class="text-5xl md:text-6xl lg:text-[40px] font-bold text-[#202427] mb-8 uppercase">
+                            Protein Whey
+                        </h2>
+
+                        <h4
+                            class="text-sm font-bold text-gray-800 mb-6 flex items-center justify-center lg:justify-start gap-3">
+                            High-strength, 4000IU
+                        </h4>
+
+                        <p class="text-gray-600 text-[14px] leading-relaxed mb-10 max-w-[500px] mx-auto lg:mx-0">
+                            Vitamin D3 supplements are commonly recommended for people at risk for vitamin D deficiency.
+                            Low vitamin D levels cause depression, fatigue, and muscle weakness. </p>
+
+                        <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-8">
+                            <!-- Button -->
+                            <a href="#" class="shop-btn relative overflow-hidden inline-flex items-center justify-center 
+                                    text-white font-semibold text-lg px-10 md:px-12 py-3 md:py-4 rounded-full 
+                                    shadow-md hover:shadow-lg">
+                                <span class="relative z-10">Shop Now</span>
+                            </a>
+
+                            <div class="flex items-center gap-4">
+                                <span class="text-3xl font-bold text-[#202427]">$74.99</span>
+                                <span class="text-2xl text-orange-400 line-through font-semibold">$99.99</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Promo Section 03 -->
+    <section class="py-8 lg:py-10 bg-white relative overflow-hidden">
+
+        <!-- RIGHT SIDE BACKGROUND SHAPE -->
+        <div
+            class="absolute top-1/2 right-0 -translate-y-1/2 w-[120px] lg:w-[250px] z-0 pointer-events-none flex justify-end">
+            <img src="assets/images/banner_shape_product.jpg" class="h-[200px] w-auto object-contain" alt="">
+        </div>
+
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
+
+                <!-- LEFT COLUMN: IMAGE -->
+                <div class="w-full lg:w-1/2 relative flex justify-center items-center group">
+
+                    <!-- DECORATIVE SHAPE -->
+                    <div class="absolute left-[50px] top-2/3 -translate-y-1/2 z-0 w-[150px] lg:w-[300px]">
+                        <img src="assets/images/features_product_shape03.webp" class="w-full h-auto transform transition-all duration-700 ease-in-out 
+                            -translate-x-1/3 group-hover:-translate-x-[20%]" alt="">
+                    </div>
+
+                    <!-- Dotted Pattern Layer -->
+                    <div class="absolute inset-x-0 inset-y-0 dots-bg h-full w-full opacity-40 z-0"></div>
+
+                    <!-- PRODUCT IMAGE -->
+                    <div class="relative z-10 p-8">
+                        <img src="assets/images/features_product03.webp"
+                            class="w-full max-w-[500px] h-auto drop-shadow-2xl">
+                    </div>
+
+                </div>
+
+                <!-- RIGHT COLUMN: CONTENT -->
+                <div class="w-full lg:w-1/2 relative">
+
+                    <div class="relative z-10 text-center lg:text-left">
+                        <h2 class="text-5xl md:text-6xl lg:text-[40px] font-bold text-[#202427] mb-8 uppercase">
+                            Max Mass 3xl
+                        </h2>
+
+                        <h4
+                            class="text-sm font-bold text-gray-800 mb-6 flex items-center justify-center lg:justify-start gap-3">
+                            High-strength, 4000IU
+                        </h4>
+
+                        <p class="text-gray-600 text-[14px] leading-relaxed mb-10 max-w-[500px] mx-auto lg:mx-0">
+                            Vitamin D3 supplements are commonly recommended for people at risk for vitamin D deficiency.
+                            Low vitamin D levels cause depression, fatigue, and muscle weakness.
+                        </p>
+
+                        <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-8">
+                            <!-- Button -->
+                            <a href="#" class="shop-btn relative overflow-hidden inline-flex items-center justify-center 
+                                    text-white font-semibold text-lg px-10 md:px-12 py-3 md:py-4 rounded-full 
+                                    shadow-md hover:shadow-lg">
+                                <span class="relative z-10">Shop Now</span>
+                            </a>
+
+                            <div class="flex items-center gap-4">
+                                <span class="text-3xl font-bold text-[#202427]">$59.99</span>
+                                <span class="text-2xl text-orange-400 line-through font-semibold">$79.99</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Slider Section -->
+    <section class="py-20 bg-[#fdfdfd] overflow-hidden">
+        <div class="max-w-[1400px] mx-auto px-4 relative">
+
+            <!-- Slider Container -->
+            <div class="relative group/slider">
+
+                <!-- Left Arrow -->
+                <button id="prevSlide" class="nav-arrow absolute left-0 lg:-left-6 top-1/2 -translate-y-1/2 z-30">
+                    <i class="fa-solid fa-arrow-left text-lg"></i>
+                </button>
+
+                <!-- Right Arrow -->
+                <button id="nextSlide" class="nav-arrow absolute right-0 lg:-right-6 top-1/2 -translate-y-1/2 z-30">
+                    <i class="fa-solid fa-arrow-right text-lg"></i>
+                </button>
+
+                <!-- Window -->
+                <div class="overflow-hidden relative" id="sliderWindow">
+                    <!-- Track -->
+                    <div id="sliderTrack" class="slider-track">
+                        <!-- Product 1 -->
+                        <div class="slide w-full md:w-1/2 lg:w-1/3">
+                            <div
+                                class="bg-white rounded-2xl p-6 pt-8 text-center h-full relative border border-gray-50 flex flex-col items-center group/card transition-all hover:shadow-[0_20px_40px_rgba(0,0,0,0.05)]">
+                                <div class="relative w-full aspect-square mb-6 flex items-center justify-center">
+                                    <div
+                                        class="absolute bottom-2 w-[220px] h-[110px] rounded-b-full bg-[#a78bfa] opacity-40 z-0">
+                                    </div>
+                                    <img src="assets/images/slider_img1.avif"
+                                        class="relative z-10 w-[140px] h-auto max-w-full object-contain transition-transform duration-500 group-hover/card:scale-110 drop-shadow-xl"
+                                        alt="Product 1">
+                                </div>
+                                <div class="mt-auto w-full">
+                                    <h3 class="text-base font-bold uppercase text-[#202427] mb-1">Protein Powder 2kg
+                                    </h3>
+                                    <p class="text-lg font-extrabold text-[#202427] mb-3">Tk 85.99</p>
+                                    <div class="flex items-center justify-center gap-1 text-[#f89a20] mb-8">
+                                        <i class="fa-solid fa-star text-[13px]"></i>
+                                        <i class="fa-solid fa-star text-[13px]"></i>
+                                        <i class="fa-solid fa-star text-[13px]"></i>
+                                        <i class="fa-solid fa-star text-[13px]"></i>
+                                        <i class="fa-solid fa-star text-[13px]"></i>
+                                        <span class="text-gray-400 text-[13px] ml-1 font-medium">(30)</span>
+                                    </div>
+                                </div>
+                                <button
+                                    class="absolute bottom-5 left-5 w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center hover:bg-[#0a864a] transition-colors shadow-md">
+                                    <i class="fa-solid fa-cart-shopping text-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Product 2 -->
+                        <div class="slide w-full md:w-1/2 lg:w-1/3">
+                            <div
+                                class="bg-white rounded-2xl p-6 pt-8 text-center h-full relative border border-gray-50 flex flex-col items-center group/card transition-all hover:shadow-[0_20px_40px_rgba(0,0,0,0.05)]">
+                                <div class="relative w-full aspect-square mb-6 flex items-center justify-center">
+                                    <div
+                                        class="absolute bottom-2 w-[220px] h-[110px] rounded-b-full bg-[#A3D86D] opacity-40 z-0">
+                                    </div>
+                                    <img src="assets/images/slider_img2.avif"
+                                        class="relative z-10 w-[140px] h-auto max-w-full object-contain transition-transform duration-500 group-hover/card:scale-110 drop-shadow-xl"
+                                        alt="Product 2">
+                                </div>
+                                <div class="mt-auto w-full">
+                                    <h3 class="text-base font-bold uppercase text-[#202427] mb-1">Whey Protein Powder
+                                    </h3>
+                                    <p class="text-lg font-extrabold text-[#202427] mb-3">Tk 49.99</p>
+                                    <div class="flex items-center justify-center gap-1 text-[#f89a20] mb-8">
+                                        <i class="fa-solid fa-star text-[13px]"></i>
+                                        <i class="fa-solid fa-star text-[13px]"></i>
+                                        <i class="fa-solid fa-star text-[13px]"></i>
+                                        <i class="fa-solid fa-star text-[13px]"></i>
+                                        <i class="fa-solid fa-star text-[13px]"></i>
+                                        <span class="text-gray-400 text-[13px] ml-1 font-medium">(30)</span>
+                                    </div>
+                                </div>
+                                <button
+                                    class="absolute bottom-5 left-5 w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center hover:bg-[#0a864a] transition-colors shadow-md">
+                                    <i class="fa-solid fa-cart-shopping text-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Product 3 -->
+                        <div class="slide w-full md:w-1/2 lg:w-1/3">
+                            <div
+                                class="bg-white rounded-2xl p-6 pt-8 text-center h-full relative border border-gray-50 flex flex-col items-center group/card transition-all hover:shadow-[0_20px_40px_rgba(0,0,0,0.05)]">
+                                <div class="relative w-full aspect-square mb-6 flex items-center justify-center">
+                                    <div
+                                        class="absolute bottom-2 w-[220px] h-[110px] rounded-b-full bg-[#DEDEDD] opacity-40 z-0">
+                                    </div>
+                                    <img src="assets/images/slider_img3.avif"
+                                        class="relative z-10 w-[140px] h-auto max-w-full object-contain transition-transform duration-500 group-hover/card:scale-110 drop-shadow-xl"
+                                        alt="Product 3">
+                                </div>
+                                <div class="mt-auto w-full">
+                                    <h3 class="text-base font-bold uppercase text-[#202427] mb-1">Antiaging and
+                                        Longevity</h3>
+                                    <p class="text-lg font-extrabold text-[#202427] mb-3">Tk 49.99</p>
+                                    <div class="flex items-center justify-center gap-1 text-[#f89a20] mb-8">
+                                        <i class="fa-solid fa-star text-[13px]"></i>
+                                        <i class="fa-solid fa-star text-[13px]"></i>
+                                        <i class="fa-solid fa-star text-[13px]"></i>
+                                        <i class="fa-solid fa-star text-[13px]"></i>
+                                        <i class="fa-solid fa-star text-[13px]"></i>
+                                        <span class="text-gray-400 text-[13px] ml-1 font-medium">(30)</span>
+                                    </div>
+                                </div>
+                                <button
+                                    class="absolute bottom-5 left-5 w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center hover:bg-[#0a864a] transition-colors shadow-md">
+                                    <i class="fa-solid fa-cart-shopping text-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Product 4 -->
+                        <div class="slide w-full md:w-1/2 lg:w-1/3">
+                            <div
+                                class="bg-white rounded-2xl p-6 pt-8 text-center h-full relative border border-gray-50 flex flex-col items-center group/card transition-all hover:shadow-[0_20px_40px_rgba(0,0,0,0.05)]">
+                                <div class="relative w-full aspect-square mb-6 flex items-center justify-center">
+                                    <div
+                                        class="absolute bottom-2 w-[220px] h-[110px] rounded-b-full bg-[#25A1D0] opacity-40 z-0">
+                                    </div>
+                                    <img src="assets/images/slider_img4.avif"
+                                        class="relative z-10 w-[140px] h-auto max-w-full object-contain transition-transform duration-500 group-hover/card:scale-110 drop-shadow-xl"
+                                        alt="Product 4">
+                                </div>
+                                <div class="mt-auto w-full">
+                                    <h3 class="text-base font-bold uppercase text-[#202427] mb-1">Max Mass 3XL</h3>
+                                    <p class="text-lg font-extrabold text-[#202427] mb-3">Tk 69.99</p>
+                                    <div class="flex items-center justify-center gap-1 text-[#f89a20] mb-8">
+                                        <i class="fa-solid fa-star text-[13px]"></i>
+                                        <i class="fa-solid fa-star text-[13px]"></i>
+                                        <i class="fa-solid fa-star text-[13px]"></i>
+                                        <i class="fa-solid fa-star text-[13px]"></i>
+                                        <i class="fa-solid fa-star text-[13px]"></i>
+                                        <span class="text-gray-400 text-[13px] ml-1 font-medium">(30)</span>
+                                    </div>
+                                </div>
+                                <button
+                                    class="absolute bottom-5 left-5 w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center hover:bg-[#0a864a] transition-colors shadow-md">
+                                    <i class="fa-solid fa-cart-shopping text-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dots -->
+            <div id="sliderDots" class="flex justify-center gap-3 mt-12 relative z-30">
+                <div class="dot active" data-index="0"></div>
+                <div class="dot" data-index="1"></div>
+                <div class="dot" data-index="2"></div>
+                <div class="dot" data-index="3"></div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="video-section relative w-full">
+
+        <!-- TOP EDGE -->
+        <div class="absolute top-0 left-0 w-full z-20">
+            <img src="assets/images/white_top_edge.webp" class="w-full object-cover" alt="">
+        </div>
+
+        <!-- Background Image -->
+        <img src="https://media.istockphoto.com/id/940552590/photo/woman-doing-battle-rope-workout-at-gym.webp?a=1&b=1&s=612x612&w=0&k=20&c=hyVNi796H6j48-ZokQm7UhZSgrZEXgUqxQSeLZNlMas="
+            class="w-full h-[550px] object-cover" />
+
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+
+            <!-- Play Button -->
+            <div class="relative flex items-center justify-center">
+
+                <!-- Green Glow Layers -->
+                <span class="glow glow1"></span>
+                <span class="glow glow2"></span>
+                <span class="glow glow3"></span>
+
+                <!-- Button -->
+                <button
+                    class="relative z-10 w-20 h-20 bg-green-600 rounded-full flex items-center justify-center shadow-xl">
+                    <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z" />
+                    </svg>
+                </button>
+
+            </div>
+        </div>
+        <!-- BOTTOM EDGE -->
+        <div class="absolute bottom-0 left-0 w-full z-20">
+            <img src="assets/images/white_bottom_edge.webp" class="w-full object-cover" alt="">
+        </div>
+    </section>
+
+    <section class="counter-section py-20 bg-white">
+        <div class="max-w-[1200px] mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <!-- Item 1 -->
+            <div class="counter-box flex items-center gap-6 p-6 border rounded-lg">
+                <div class="relative w-[80px] h-[80px]">
+                    <svg class="progress-ring w-full h-full">
+                        <circle cx="40" cy="40" r="35" stroke="#eee" stroke-width="6" fill="none" />
+                        <circle class="progress" cx="40" cy="40" r="35" stroke="#f59e0b" stroke-width="6" fill="none"
+                            stroke-dasharray="220" stroke-dashoffset="220" />
+                    </svg>
+                    <span class="counter absolute inset-0 flex items-center justify-center font-bold text-lg"
+                        data-target="65">0%</span>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg">ACTIVE MEMBERS</h3>
+                    <p class="text-gray-500 text-sm">Yes we did it asap software</p>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="counter-box flex items-center gap-6 p-6 border rounded-lg">
+                <div class="relative w-[80px] h-[80px]">
+                    <svg class="progress-ring w-full h-full">
+                        <circle cx="40" cy="40" r="35" stroke="#eee" stroke-width="6" fill="none" />
+                        <circle class="progress" cx="40" cy="40" r="35" stroke="#f59e0b" stroke-width="6" fill="none"
+                            stroke-dasharray="220" stroke-dashoffset="220" />
+                    </svg>
+                    <span class="counter absolute inset-0 flex items-center justify-center font-bold text-lg"
+                        data-target="90">0%</span>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg">PROJECTS DONE</h3>
+                    <p class="text-gray-500 text-sm">Yes we did it asap software</p>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="counter-box flex items-center gap-6 p-6 border rounded-lg">
+                <div class="relative w-[80px] h-[80px]">
+                    <svg class="progress-ring w-full h-full">
+                        <circle cx="40" cy="40" r="35" stroke="#eee" stroke-width="6" fill="none" />
+                        <circle class="progress" cx="40" cy="40" r="35" stroke="#f59e0b" stroke-width="6" fill="none"
+                            stroke-dasharray="220" stroke-dashoffset="220" />
+                    </svg>
+                    <span class="counter absolute inset-0 flex items-center justify-center font-bold text-lg"
+                        data-target="80">0%</span>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg">GET REWARDS</h3>
+                    <p class="text-gray-500 text-sm">Yes we did it asap software</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Ingredients Section -->
+    <section class="py-20 lg:py-20 bg-white">
+        <div class="max-w-[1400px] mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
+
+                <!-- Left: Large Image -->
+                <div class="w-full max-w-[350px] lg:max-w-[350px] lg:w-1/2 flex justify-center">
+                    <img src="assets/images/ingredients_img.webp"
+                        class="w-full max-w-[450px] lg:max-w-[400px] h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-700">
+                </div>
+
+                <!-- Right: Content & Grid -->
+                <div class="w-full lg:w-1/2">
+
+                    <!-- Heading -->
+                    <h2
+                        class="text-4xl lg:text-5xl font-bold uppercase text-[#202427] mb-12 text-center lg:text-left tracking-tight">
+                        SUXNIX INGREDIENTS
+                    </h2>
+
+                    <!-- Features Grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-12">
+
+                        <!-- Item 1 -->
+                        <div
+                            class="group flex flex-col items-center md:items-start text-center md:text-left transition-transform hover:-translate-y-2 duration-300">
+                            <!-- Hex Image -->
+                            <div class="w-20 h-20 lg:w-28 lg:h-28 mb-6 overflow-hidden relative"
+                                style="clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);">
+                                <img src="assets/images/ingredients_item01.webp"
+                                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                    alt="Stick to Diet">
+                            </div>
+                            <!-- Title & Line -->
+                            <div class="flex items-center gap-3 mb-4 w-full justify-center md:justify-start">
+                                <span class="w-1 h-5 bg-[#f89a20]"></span>
+                                <h3 class="font-bold text-lg uppercase text-[#202427]">HELPS YOU STICK TO YOUR DIET</h3>
+                            </div>
+                            <!-- Desc -->
+                            <p class="text-gray-500 text-sm leading-relaxed max-w-[300px]">
+                                A thing added to something else in order to complete or enhance it.
+                            </p>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div
+                            class="group flex flex-col items-center md:items-start text-center md:text-left transition-transform hover:-translate-y-2 duration-300">
+                            <!-- Hex Image -->
+                            <div class="w-20 h-20 lg:w-28 lg:h-28 mb-6 overflow-hidden relative"
+                                style="clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);">
+                                <img src="assets/images/ingredients_item02.webp"
+                                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                    alt="Low Carbs">
+                            </div>
+                            <div class="flex items-center gap-3 mb-4 w-full justify-center md:justify-start">
+                                <span class="w-1 h-5 bg-[#f89a20]"></span>
+                                <h3 class="font-bold text-lg uppercase text-[#202427]">ONLY 3G NET CARBS IN EVERY JAR
+                                </h3>
+                            </div>
+                            <p class="text-gray-500 text-sm leading-relaxed max-w-[300px]">
+                                A thing added to something else in order to complete or enhance it.
+                            </p>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div
+                            class="group flex flex-col items-center md:items-start text-center md:text-left transition-transform hover:-translate-y-2 duration-300">
+                            <!-- Hex Image -->
+                            <div class="w-20 h-20 lg:w-28 lg:h-28 mb-6 overflow-hidden relative"
+                                style="clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);">
+                                <img src="assets/images/ingredients_item03.webp"
+                                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                    alt="Burn Fat">
+                            </div>
+                            <div class="flex items-center gap-3 mb-4 w-full justify-center md:justify-start">
+                                <span class="w-1 h-5 bg-[#f89a20]"></span>
+                                <h3 class="font-bold text-lg uppercase text-[#202427]">BURN BODY FAT NOT MUSCLE</h3>
+                            </div>
+                            <p class="text-gray-500 text-sm leading-relaxed max-w-[300px]">
+                                A thing added to something else in order to complete or enhance it.
+                            </p>
+                        </div>
+
+                        <!-- Item 4 -->
+                        <div
+                            class="group flex flex-col items-center md:items-start text-center md:text-left transition-transform hover:-translate-y-2 duration-300">
+                            <!-- Hex Image -->
+                            <div class="w-10 h-20 lg:w-28 lg:h-28 mb-6 overflow-hidden relative"
+                                style="clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);">
+                                <img src="assets/images/ingredients_item04.webp"
+                                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                    alt="Workout Effectively">
+                            </div>
+                            <div class="flex items-center gap-3 mb-4 w-full justify-center md:justify-start">
+                                <span class="w-1 h-5 bg-[#f89a20]"></span>
+                                <h3 class="font-bold text-lg uppercase text-[#202427]">WORKOUT MORE EFFECTIVELY</h3>
+                            </div>
+                            <p class="text-gray-500 text-sm leading-relaxed max-w-[300px]">
+                                A thing added to something else in order to complete or enhance it.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 lg:py-23 bg-white">
+        <div class="max-w-[1400px] mx-auto px-4">
+            <div class="flex flex-col-reverse lg:flex-row items-center justify-between gap-12 lg:gap-20">
+
+                <!-- LEFT CONTENT -->
+                <div class="w-full lg:w-1/2 text-center lg:text-left lg:pl-16">
+
+                    <!-- Small Label -->
+                    <p class="text-green-600 text-sm tracking-[3px] uppercase mb-4">
+                        .. Suxnix Formula ..
+                    </p>
+
+                    <!-- Heading -->
+                    <h1 class="text-2xl lg:text-4xl font-extrabold text-[#202427] leading-tight mb-8">
+                        WHY WE CHOSE THIS <br class="hidden lg:block"> FORMULA
+                    </h1>
+
+                    <!-- Button -->
+                    <button
+                        class="bg-[#78B623] hover:bg-[#78B623] text-white font-semibold px-6 py-3 rounded-full shadow-lg transition duration-300">
+                        KNOW MORE
+                    </button>
+
+                </div>
+
+                <!-- Right: Content & Grid -->
+                <div class="w-full lg:w-1/2">
+                    <img src="assets/images/formula_img.webp" alt="">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="py-20 lg:py-28 bg-[#f8f9fa] relative">
+        <div class="max-w-[1200px] mx-auto px-4">
+            <!-- Section Header -->
+            <div class="text-center mb-16">
+                <p class="text-[#f89a20] text-sm font-bold tracking-[3px] uppercase mb-4">
+                    .. SUXNIX PLANS ..
+                </p>
+                <h2 class="text-4xl md:text-5xl font-extrabold text-[#202427] uppercase tracking-tight">
+                    SUPPLEMENT PACKAGES
+                </h2>
+            </div>
+
+            <!-- Pricing Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
+
+                <!-- Card 1 -->
+                <div
+                    class="group/card rounded-xl flex flex-col items-center shadow-[0_5px_20px_rgba(0,0,0,0.05)] border-2 border-transparent hover:border-[#f89a20] transition-all duration-400 ease-in-out overflow-hidden relative pt-10">
+                    <div class="px-6 py-6 pb-8 flex flex-col items-center w-full h-full flex-grow">
+                        <h3 class="text-lg font-bold text-[#202427] uppercase mb-1">1 BOTTLE OF</h3>
+                        <h4 class="text-3xl font-extrabold text-[#202427] uppercase mb-2">SUXNIX</h4>
+                        <p class="text-gray-800 font-bold mb-8 text-[15px] text-center">(1 X 250 Veggie Caps Bottle)</p>
+
+                        <div class="h-[220px] mb-8 flex items-center justify-center w-full">
+                            <img src="assets/images/pricing_01.avif" alt="1 Bottle" class="max-h-full object-contain">
+                        </div>
+
+                        <div class="mt-auto flex flex-col items-center w-full">
+                            <div class="flex items-end justify-center mb-1">
+                                <span
+                                    class="text-6xl font-extrabold text-[#202427] leading-none group-hover/card:text-[#F89A20]">$69</span>
+                                <div class="text-left ml-2 pb-1">
+                                    <span
+                                        class="block text-gray-500 font-bold text-sm leading-tight group-hover/card:text-[#F89A20]">Per</span>
+                                    <span
+                                        class="block text-gray-500 font-bold text-sm leading-tight group-hover/card:text-[#F89A20]">Bottle</span>
+                                </div>
+                            </div>
+                            <p class="text-gray-500 font-bold mb-6 text-[15px]">($69 TOTAL)</p>
+
+                            <p class="text-[#f89a20] font-extrabold text-[22px] uppercase mb-1">SAVE 14%</p>
+                            <p class="text-[#f89a20] font-bold mb-8">+ Free Shipping</p>
+
+                            <button
+                                class="group w-full bg-[#f89a20] text-white rounded overflow-hidden hover:bg-white border-2 border-[#f89a20] transition-colors duration-300 flex flex-col items-center justify-center py-3">
+                                <span
+                                    class="text-white font-bold text-xl uppercase group-hover:text-[#f89a20] transition-colors leading-tight">BUY
+                                    NOW</span>
+                                <span
+                                    class="text-white text-[11px] uppercase font-semibold group-hover:text-[#f89a20] transition-colors mt-1 tracking-wide text-center">365
+                                    DAY FULL MONEY BACK GUARANTEED</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 (Most Popular) -->
+                <div
+                    class="group/card rounded-xl flex flex-col items-center shadow-[0_5px_20px_rgba(0,0,0,0.05)] border-2 border-transparent hover:border-[#f89a20] transition-all duration-400 ease-in-out overflow-hidden relative pt-10 ">
+                    <div
+                        class="absolute top-0 left-0 w-full bg-gray-500 text-white font-bold py-[10px] text-center uppercase tracking-wide text-sm flex-none group-hover/card:bg-[#f89a20] ">
+                        ★ MOST POPULAR ★
+                    </div>
+                    <div class="px-6 py-6 pb-8 flex flex-col items-center w-full h-full flex-grow">
+                        <h3 class="text-lg font-bold text-[#202427] uppercase mb-1">1 BOTTLE OF</h3>
+                        <h4 class="text-3xl font-extrabold text-[#202427] uppercase mb-2">SUXNIX</h4>
+                        <p class="text-gray-800 font-bold mb-8 text-[15px] text-center">(1 X 250 Veggie Caps Bottle)</p>
+
+                        <div class="h-[220px] mb-8 flex items-center justify-center w-full">
+                            <img src="assets/images/pricing_02.avif" alt="Most Popular"
+                                class="max-h-full object-contain">
+                        </div>
+
+                        <div class="mt-auto flex flex-col items-center w-full">
+                            <div class="flex items-end justify-center mb-1">
+                                <span
+                                    class="text-6xl font-extrabold text-[#202427] leading-none group-hover/card:text-[#F89A20]">$69</span>
+                                <div class="text-left ml-2 pb-1">
+                                    <span
+                                        class="block text-gray-500 font-bold text-sm leading-tight group-hover/card:text-[#F89A20]">Per</span>
+                                    <span
+                                        class="block text-gray-500 font-bold text-sm leading-tight group-hover/card:text-[#F89A20]">Bottle</span>
+                                </div>
+                            </div>
+                            <p class="text-gray-500 font-bold mb-6 text-[15px]">($69 TOTAL)</p>
+
+                            <p class="text-[#f89a20] font-extrabold text-[22px] uppercase mb-1">SAVE 14%</p>
+                            <p class="text-[#f89a20] font-bold mb-8">+ Free Shipping</p>
+
+                            <button
+                                class="group w-full bg-[#f89a20] text-white rounded overflow-hidden hover:bg-white border-2 border-[#f89a20] transition-colors duration-300 flex flex-col items-center justify-center py-3">
+                                <span
+                                    class="text-white font-bold text-xl uppercase group-hover:text-[#f89a20] transition-colors leading-tight">BUY
+                                    NOW</span>
+                                <span
+                                    class="text-white text-[11px] uppercase font-semibold group-hover:text-[#f89a20] transition-colors mt-1 tracking-wide text-center">365
+                                    DAY FULL MONEY BACK GUARANTEED</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 (Best Value) -->
+                <div
+                    class="bg-white rounded-xl flex flex-col items-center shadow-[0_5px_20px_rgba(0,0,0,0.05)] overflow-hidden relative border-2 border-[#f89a20] pt-10">
+                    <div
+                        class="absolute top-0 left-0 w-full bg-[#f89a20] text-white font-bold py-[10px] text-center uppercase tracking-wide text-sm flex-none">
+                        ✓ BEST VALUE
+                    </div>
+                    <div class="px-6 py-6 pb-8 flex flex-col items-center w-full h-full flex-grow">
+                        <h3 class="text-lg font-bold text-[#202427] uppercase mb-1">1 BOTTLE OF</h3>
+                        <h4 class="text-3xl font-extrabold text-[#202427] uppercase mb-2">SUXNIX</h4>
+                        <p class="text-gray-800 font-bold mb-8 text-[15px] text-center">(1 X 250 Veggie Caps Bottle)</p>
+
+                        <div class="h-[220px] mb-8 flex items-center justify-center w-full">
+                            <img src="assets/images/pricing_03.avif" alt="Best Value" class="max-h-full object-contain">
+                        </div>
+
+                        <div class="mt-auto flex flex-col items-center w-full">
+                            <div class="flex items-end justify-center mb-1">
+                                <span class="text-6xl font-extrabold text-[#f89a20] leading-none">$69</span>
+                                <div class="text-left ml-2 pb-1">
+                                    <span class="block text-[#f89a20] font-bold text-sm leading-tight">Per</span>
+                                    <span class="block text-[#f89a20] font-bold text-sm leading-tight">Bottle</span>
+                                </div>
+                            </div>
+                            <p class="text-gray-500 font-bold mb-6 text-[15px]">($69 TOTAL)</p>
+
+                            <p class="text-[#f89a20] font-extrabold text-[22px] uppercase mb-1">SAVE 14%</p>
+                            <p class="text-[#f89a20] font-bold mb-8">+ Free Shipping</p>
+
+                            <button
+                                class="group w-full bg-[#f89a20] text-white rounded overflow-hidden hover:bg-white border-2 border-[#f89a20] transition-colors duration-300 flex flex-col items-center justify-center py-3">
+                                <span
+                                    class="text-white font-bold text-xl uppercase group-hover:text-[#f89a20] transition-colors leading-tight">BUY
+                                    NOW</span>
+                                <span
+                                    class="text-white text-[11px] uppercase font-semibold group-hover:text-[#f89a20] transition-colors mt-1 tracking-wide text-center">365
+                                    DAY FULL MONEY BACK GUARANTEED</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Slider Section -->
+    <section class="testimonial-section relative py-20 md:py-20 bg-fixed bg-center bg-cover border-y border-transparent"
+        style="background-image: url('assets/images/woman-training-battle-ropes.jpg');">
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black/80 z-0 shadow-inner"></div>
+
+        <!-- Top Edge -->
+        <div class="absolute top-[-1px] left-0 w-full z-10 leading-[0]">
+            <img src="assets/images/white_top_edge.webp" alt="edge" class="w-full object-cover h-[20px] md:h-auto">
+        </div>
+
+        <div class="container mx-auto px-4 relative z-20 max-w-[900px] text-center pt-8 md:pt-16 pb-12">
+
+            <div class="relative group/testi">
+                <!-- Slider Window -->
+                <div class="overflow-hidden relative w-full" id="testiWindow">
+                    <!-- Track -->
+                    <div id="testiTrack" class="flex transition-transform duration-500 ease-in-out w-full">
+
+                        <!-- Slide 1 -->
+                        <div
+                            class="testi-slide w-full flex-shrink-0 flex flex-col items-center px-6 md:px-16 transition-opacity duration-500">
+                            <!-- Stars -->
+                            <div class="flex gap-1 text-[#f89a20] text-xl mb-6">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i>
+                            </div>
+                            <!-- Text -->
+                            <div class="testi-content">
+                                <p class="text-white text-[17px] md:text-2xl font-medium leading-relaxed italic mb-8">
+                                    "This supplement completely changed my workout routine. I have so much more energy
+                                    and my recovery time is cut in half. Highly recommend to anyone looking to level
+                                    up!"
+                                </p>
+                            </div>
+                            <!-- Reviewer Image -->
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Reviewer"
+                                class="w-20 h-20 rounded-full border-4 border-white/20 mb-4 object-cover">
+                            <!-- Name -->
+                            <h4 class="text-white font-bold tracking-wider uppercase text-lg">SARAH JENKINS</h4>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div
+                            class="testi-slide w-full flex-shrink-0 flex flex-col items-center px-6 md:px-16 transition-opacity duration-500">
+                            <div class="flex gap-1 text-[#f89a20] text-xl mb-6">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="testi-content">
+                                <p class="text-white text-[17px] md:text-2xl font-medium leading-relaxed italic mb-8">
+                                    "I've tried many different brands over the years, but Suxnix stands out. The
+                                    ingredients are clean, the results are undeniable, and it tastes great too. A true
+                                    game-changer."
+                                </p>
+                            </div>
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Reviewer"
+                                class="w-20 h-20 rounded-full border-4 border-white/20 mb-4 object-cover">
+                            <h4 class="text-white font-bold tracking-wider uppercase text-lg">MICHAEL CHEN</h4>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div
+                            class="testi-slide w-full flex-shrink-0 flex flex-col items-center px-6 md:px-16 transition-opacity duration-500">
+                            <div class="flex gap-1 text-[#f89a20] text-xl mb-6">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="testi-content">
+                                <p class="text-white text-[17px] md:text-2xl font-medium leading-relaxed italic mb-8">
+                                    "Absolutely thrilled with the progress I've made since starting these plans. The
+                                    combination of value, effectiveness, and customer support is simply unmatched."
+                                </p>
+                            </div>
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Reviewer"
+                                class="w-20 h-20 rounded-full border-4 border-white/20 mb-4 object-cover">
+                            <h4 class="text-white font-bold tracking-wider uppercase text-lg">EMILY ROGERS</h4>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Arrows -->
+                <button id="prevTesti"
+                    class="absolute left-0 md:left-[-40px] top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 bg-[#0E9D4D] hover:bg-[#0a864a] text-white rounded-full flex items-center justify-center transition-all hover:scale-110 z-30 shadow-lg">
+                    <i class="fa-solid fa-arrow-left text-sm md:text-base"></i>
+                </button>
+                <button id="nextTesti"
+                    class="absolute right-0 md:right-[-40px] top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 bg-[#0E9D4D] hover:bg-[#0a864a] text-white rounded-full flex items-center justify-center transition-all hover:scale-110 z-30 shadow-lg">
+                    <i class="fa-solid fa-arrow-right text-sm md:text-base"></i>
+                </button>
+
+            </div>
+
+            <!-- Dots -->
+            <div id="testiDots" class="flex justify-center items-center gap-3 mt-10 md:mt-12 relative z-30">
+                <div class="testi-dot w-8 h-3 bg-[#0E9D4D] rounded-full cursor-pointer transition-all duration-300"
+                    data-idx="0"></div>
+                <div class="testi-dot w-3 h-3 bg-white/40 hover:bg-white/60 rounded-full cursor-pointer transition-all duration-300"
+                    data-idx="1"></div>
+                <div class="testi-dot w-3 h-3 bg-white/40 hover:bg-white/60 rounded-full cursor-pointer transition-all duration-300"
+                    data-idx="2"></div>
+            </div>
+
+        </div>
+
+        <!-- Bottom Edge -->
+        <div class="absolute bottom-[-1px] left-0 w-full z-10 leading-[0]">
+            <img src="assets/images/white_bottom_edge.webp" alt="edge" class="w-full object-cover h-[20px] md:h-auto">
+        </div>
+    </section>
+
+    <!-- News & FAQ Section -->
+    <section class="py-24 bg-white relative overflow-hidden mx-20">
+        <!-- Left Background Circle -->
+        <div
+            class="absolute -left-[300px] top-[10%] w-[800px] h-[800px] bg-[#fdfdfd] border border-gray-50 rounded-full z-0 pointer-events-none">
+        </div>
+
+        <div class="container mx-auto px-4 max-w-[1250px] relative z-10">
+            <div class="flex flex-col lg:flex-row justify-between gap-12 lg:gap-10">
+
+                <!-- Left Column: LATEST NEWS -->
+                <div class="w-full lg:w-[48%] relative">
+                    <p class="text-[#f89a20] text-sm font-bold tracking-[3px] uppercase mb-4">
+                        .. SUXNIX NEWS ..
+                    </p>
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-[#202427] uppercase tracking-tight mb-12">
+                        LATEST NEWS
+                    </h2>
+
+                    <div class="flex flex-col gap-8">
+
+                        <!-- Blog Item 1 -->
+                        <div
+                            class="flex flex-col sm:flex-row gap-6 items-center sm:items-start group border-b border-gray-100 pb-8 last:border-0 last:pb-0">
+                            <div
+                                class="w-full sm:w-[200px] h-[140px] rounded-xl overflow-hidden flex-shrink-0 relative shadow-sm">
+                                <img src="assets/images/blog1.webp" alt="Blog 1"
+                                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            </div>
+                            <div class="flex-grow w-full py-1 flex flex-col h-full">
+                                <div class="flex justify-between items-center text-[15px] font-bold text-gray-500 mb-3">
+                                    <span class="capitalize text-gray-800">business</span>
+                                    <span class="flex items-center gap-2"><i
+                                            class="fa-regular fa-clock text-gray-400"></i> January 16, 2025</span>
+                                </div>
+                                <h3
+                                    class="text-[19px] font-bold text-[#202427] mb-5 uppercase leading-snug group-hover:text-[#f89a20] transition-colors cursor-pointer">
+                                    LABORIS NISI UT ALIQUIP EX EA COMMO...
+                                </h3>
+                                <div
+                                    class="flex justify-between items-center text-[14.5px] font-bold text-gray-500 mt-auto pt-2 border-t border-dashed border-gray-100">
+                                    <span>Posted by - <span class="text-[#f89a20] cursor-pointer">Web
+                                            Developer</span></span>
+                                    <div class="flex gap-4 items-center">
+                                        <span class="flex items-center gap-1.5"><i
+                                                class="fa-regular fa-envelope text-gray-400"></i> 0</span>
+                                        <span class="flex items-center gap-1.5"><i
+                                                class="fa-regular fa-eye text-gray-400"></i> k</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Blog Item 2 -->
+                        <div
+                            class="flex flex-col sm:flex-row gap-6 items-center sm:items-start group border-b border-gray-100 pb-8 last:border-0 last:pb-0">
+                            <div
+                                class="w-full sm:w-[200px] h-[140px] rounded-xl overflow-hidden flex-shrink-0 relative shadow-sm">
+                                <img src="assets/images/blog2.webp" alt="Blog 2"
+                                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            </div>
+                            <div class="flex-grow w-full py-1 flex flex-col h-full">
+                                <div class="flex justify-between items-center text-[15px] font-bold text-gray-500 mb-3">
+                                    <span class="capitalize text-gray-800">business</span>
+                                    <span class="flex items-center gap-2"><i
+                                            class="fa-regular fa-clock text-gray-400"></i> January 16, 2025</span>
+                                </div>
+                                <h3
+                                    class="text-[19px] font-bold text-[#202427] mb-5 uppercase leading-snug group-hover:text-[#f89a20] transition-colors cursor-pointer">
+                                    ADIPISICING ELIT SED DO EIUSMOD TEMP...
+                                </h3>
+                                <div
+                                    class="flex justify-between items-center text-[14.5px] font-bold text-gray-500 mt-auto pt-2 border-t border-dashed border-gray-100">
+                                    <span>Posted by - <span class="text-[#f89a20] cursor-pointer">Web
+                                            Developer</span></span>
+                                    <div class="flex gap-4 items-center">
+                                        <span class="flex items-center gap-1.5"><i
+                                                class="fa-regular fa-envelope text-gray-400"></i> 0</span>
+                                        <span class="flex items-center gap-1.5"><i
+                                                class="fa-regular fa-eye text-gray-400"></i> k</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Blog Item 3 -->
+                        <div
+                            class="flex flex-col sm:flex-row gap-6 items-center sm:items-start group border-b border-gray-100 pb-8 last:border-0 last:pb-0">
+                            <div
+                                class="w-full sm:w-[200px] h-[140px] rounded-xl overflow-hidden flex-shrink-0 relative shadow-sm">
+                                <img src="assets/images/blog3.webp" alt="Blog 3"
+                                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            </div>
+                            <div class="flex-grow w-full py-1 flex flex-col h-full">
+                                <div class="flex justify-between items-center text-[15px] font-bold text-gray-500 mb-3">
+                                    <span class="capitalize text-gray-800">desgin</span>
+                                    <span class="flex items-center gap-2"><i
+                                            class="fa-regular fa-clock text-gray-400"></i> January 16, 2025</span>
+                                </div>
+                                <h3
+                                    class="text-[19px] font-bold text-[#202427] mb-5 uppercase leading-snug group-hover:text-[#f89a20] transition-colors cursor-pointer">
+                                    LOREM IPSUM DOLOR SIT AMET CONSECT...
+                                </h3>
+                                <div
+                                    class="flex justify-between items-center text-[14.5px] font-bold text-gray-500 mt-auto pt-2 border-t border-dashed border-gray-100">
+                                    <span>Posted by - <span class="text-[#f89a20] cursor-pointer">Web
+                                            Developer</span></span>
+                                    <div class="flex gap-4 items-center">
+                                        <span class="flex items-center gap-1.5"><i
+                                                class="fa-regular fa-envelope text-gray-400"></i> 0</span>
+                                        <span class="flex items-center gap-1.5"><i
+                                                class="fa-regular fa-eye text-gray-400"></i> k</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Divider -->
+                <div class="hidden lg:flex w-[1px] border-l-2 border-dashed border-gray-100 relative my-6"></div>
+
+                <!-- Right Column: FREQUENTLY ASKED QUESTIONS -->
+                <div class="w-full lg:w-[48%] relative z-10">
+                    <p class="text-[#f89a20] text-sm font-bold tracking-[3px] uppercase mb-4">
+                        .. COMMON QUESTIONS ..
+                    </p>
+                    <h2
+                        class="text-4xl md:text-5xl font-extrabold text-[#202427] uppercase tracking-tight mb-12 leading-tight">
+                        FREQUENTLY ASKED<br>QUESTIONS
+                    </h2>
+
+                    <!-- Accordion Wrapper -->
+                    <div class="flex flex-col gap-3">
+
+                        <!-- Accordion Item 1 (Open by default) -->
+                        <div
+                            class="faq-item border border-gray-100 rounded-xl overflow-hidden bg-white hover:border-[#f89a20]/50 transition-all duration-300 group-[.active]:shadow-[0_5px_20px_rgba(0,0,0,0.05)] group-[.active]:border-[#f89a20] group active">
+                            <button
+                                class="faq-btn w-full text-left py-5 px-6 flex justify-between items-center focus:outline-none bg-white hover:bg-gray-50/50 transition-colors">
+                                <h3
+                                    class="text-[15px] md:text-[16px] font-bold text-[#202427] uppercase group-[.active]:text-[#f89a20] transition-colors pr-2 leading-snug">
+                                    <span class="text-[#f89a20] mr-2">01.</span> SUXNIX INGREDIENTS PROVIDES A
+                                    SEARCHABLE ?
+                                </h3>
+                                <div
+                                    class="w-8 h-8 rounded-full bg-gray-50 flex items-center justify-center flex-shrink-0 group-[.active]:bg-[#f89a20] transition-colors duration-300">
+                                    <i class="fa-solid fa-plus text-[13px] text-gray-500 group-[.active]:hidden"></i>
+                                    <i
+                                        class="fa-solid fa-minus text-[13px] text-white hidden group-[.active]:block"></i>
+                                </div>
+                            </button>
+                            <div
+                                class="faq-content overflow-hidden max-h-0 group-[.active]:max-h-[500px] transition-all duration-500 ease-in-out px-6 bg-white">
+                                <p class="text-gray-500 text-[14.5px] leading-[1.8] pb-6 pr-4">
+                                    There are many variations of passages of lorem ipsum that available but the majority
+                                    have alteration in some form by injected humour. There are many variations of
+                                    passages.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Accordion Item 2 -->
+                        <div
+                            class="faq-item border border-gray-100 rounded-xl overflow-hidden bg-white hover:border-[#f89a20]/50 transition-all duration-300 group-[.active]:shadow-[0_5px_20px_rgba(0,0,0,0.05)] group-[.active]:border-[#f89a20] group">
+                            <button
+                                class="faq-btn w-full text-left py-5 px-6 flex justify-between items-center focus:outline-none bg-white hover:bg-gray-50/50 transition-colors">
+                                <h3
+                                    class="text-[15px] md:text-[16px] font-bold text-[#202427] uppercase group-[.active]:text-[#f89a20] transition-colors pr-2 leading-snug">
+                                    <span class="text-[#f89a20] mr-2">02.</span> HOW TO EDIT SUXNIX THEMES ?
+                                </h3>
+                                <div
+                                    class="w-8 h-8 rounded-full bg-gray-50 flex items-center justify-center flex-shrink-0 group-[.active]:bg-[#f89a20] transition-colors duration-300">
+                                    <i class="fa-solid fa-plus text-[13px] text-gray-500 group-[.active]:hidden"></i>
+                                    <i
+                                        class="fa-solid fa-minus text-[13px] text-white hidden group-[.active]:block"></i>
+                                </div>
+                            </button>
+                            <div
+                                class="faq-content overflow-hidden max-h-0 group-[.active]:max-h-[500px] transition-all duration-500 ease-in-out px-6 bg-white">
+                                <p class="text-gray-500 text-[14.5px] leading-[1.8] pb-6 pr-4">
+                                    There are many variations of passages of lorem ipsum that available but the majority
+                                    have alteration in some form by injected humour. There are many variations of
+                                    passages.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Accordion Item 3 -->
+                        <div
+                            class="faq-item border border-gray-100 rounded-xl overflow-hidden bg-white hover:border-[#f89a20]/50 transition-all duration-300 group-[.active]:shadow-[0_5px_20px_rgba(0,0,0,0.05)] group-[.active]:border-[#f89a20] group">
+                            <button
+                                class="faq-btn w-full text-left py-5 px-6 flex justify-between items-center focus:outline-none bg-white hover:bg-gray-50/50 transition-colors">
+                                <h3
+                                    class="text-[15px] md:text-[16px] font-bold text-[#202427] uppercase group-[.active]:text-[#f89a20] transition-colors pr-2 leading-snug">
+                                    <span class="text-[#f89a20] mr-2">03.</span> SUXNIX APP IS A POWERFUL APPLICATION ?
+                                </h3>
+                                <div
+                                    class="w-8 h-8 rounded-full bg-gray-50 flex items-center justify-center flex-shrink-0 group-[.active]:bg-[#f89a20] transition-colors duration-300">
+                                    <i class="fa-solid fa-plus text-[13px] text-gray-500 group-[.active]:hidden"></i>
+                                    <i
+                                        class="fa-solid fa-minus text-[13px] text-white hidden group-[.active]:block"></i>
+                                </div>
+                            </button>
+                            <div
+                                class="faq-content overflow-hidden max-h-0 group-[.active]:max-h-[500px] transition-all duration-500 ease-in-out px-6 bg-white">
+                                <p class="text-gray-500 text-[14.5px] leading-[1.8] pb-6 pr-4">
+                                    There are many variations of passages of lorem ipsum that available but the majority
+                                    have alteration in some form by injected humour. There are many variations of
+                                    passages.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Accordion Item 4 -->
+                        <div
+                            class="faq-item border border-gray-100 rounded-xl overflow-hidden bg-white hover:border-[#f89a20]/50 transition-all duration-300 group-[.active]:shadow-[0_5px_20px_rgba(0,0,0,0.05)] group-[.active]:border-[#f89a20] group">
+                            <button
+                                class="faq-btn w-full text-left py-5 px-6 flex justify-between items-center focus:outline-none bg-white hover:bg-gray-50/50 transition-colors">
+                                <h3
+                                    class="text-[15px] md:text-[16px] font-bold text-[#202427] uppercase group-[.active]:text-[#f89a20] transition-colors pr-2 leading-snug">
+                                    <span class="text-[#f89a20] mr-2">04.</span> LATEST VERSION THOROUGH SUXNIX POWERFUL
+                                    ?
+                                </h3>
+                                <div
+                                    class="w-8 h-8 rounded-full bg-gray-50 flex items-center justify-center flex-shrink-0 group-[.active]:bg-[#f89a20] transition-colors duration-300">
+                                    <i class="fa-solid fa-plus text-[13px] text-gray-500 group-[.active]:hidden"></i>
+                                    <i
+                                        class="fa-solid fa-minus text-[13px] text-white hidden group-[.active]:block"></i>
+                                </div>
+                            </button>
+                            <div
+                                class="faq-content overflow-hidden max-h-0 group-[.active]:max-h-[500px] transition-all duration-500 ease-in-out px-6 bg-white">
+                                <p class="text-gray-500 text-[14.5px] leading-[1.8] pb-6 pr-4">
+                                    There are many variations of passages of lorem ipsum that available but the majority
+                                    have alteration in some form by injected humour. There are many variations of
+                                    passages.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Accordion Item 5 -->
+                        <div
+                            class="faq-item border border-gray-100 rounded-xl overflow-hidden bg-white hover:border-[#f89a20]/50 transition-all duration-300 group-[.active]:shadow-[0_5px_20px_rgba(0,0,0,0.05)] group-[.active]:border-[#f89a20] group">
+                            <button
+                                class="faq-btn w-full text-left py-5 px-6 flex justify-between items-center focus:outline-none bg-white hover:bg-gray-50/50 transition-colors">
+                                <h3
+                                    class="text-[15px] md:text-[16px] font-bold text-[#202427] uppercase group-[.active]:text-[#f89a20] transition-colors pr-2 leading-snug">
+                                    <span class="text-[#f89a20] mr-2">05.</span> HOW TO TRACK MY ORDER ?
+                                </h3>
+                                <div
+                                    class="w-8 h-8 rounded-full bg-gray-50 flex items-center justify-center flex-shrink-0 group-[.active]:bg-[#f89a20] transition-colors duration-300">
+                                    <i class="fa-solid fa-plus text-[13px] text-gray-500 group-[.active]:hidden"></i>
+                                    <i
+                                        class="fa-solid fa-minus text-[13px] text-white hidden group-[.active]:block"></i>
+                                </div>
+                            </button>
+                            <div
+                                class="faq-content overflow-hidden max-h-0 group-[.active]:max-h-[500px] transition-all duration-500 ease-in-out px-6 bg-white">
+                                <p class="text-gray-500 text-[14.5px] leading-[1.8] pb-6 pr-4">
+                                    There are many variations of passages of lorem ipsum that available but the majority
+                                    have alteration in some form by injected humour. There are many variations of
+                                    passages.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div id="footer"></div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTopBtn" class="fixed bottom-8 right-8 w-14 h-14 rounded-full bg-[#0E9D4D] text-white 
+         flex items-center justify-center shadow-[0_15px_25px_rgba(0,0,0,0.5)] hover:bg-[#0a864a] hover:-translate-y-1 
+         transition-all duration-300 opacity-0 invisible z-50">
+
+        <!-- Arrow Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+        </svg>
+    </button>
+
+    <!-- Video Modal -->
+    <div id="videoModal" class="fixed inset-0 bg-black/90 hidden items-center justify-center z-50">
+        <!-- Close Button -->
+        <span id="closevideoModal" class="absolute top-5 right-8 text-white text-3xl cursor-pointer">&times;</span>
+        <!-- Video -->
+        <iframe id="videoFrame" class="w-[90%] h-[80%] rounded-lg" src="" frameborder="0"
+            allow="autoplay; encrypted-media" allowfullscreen>
+        </iframe>
+    </div>
+
+    <!-- search modal -->
+    <div id="searchModal" class="fixed inset-0 bg-black/40 backdrop-sm z-[999] 
+    opacity-0 invisible transition-all duration-300">
+
+        <!-- Slide Panel -->
+        <div id="searchBox" class="absolute top-[-100%] left-0 w-full bg-white p-8 
+        transition-all duration-500 shadow-xl">
+
+            <div class="max-w-[800px] mx-auto relative">
+
+                <!-- Input -->
+                <input type="text" placeholder="Search here..."
+                    class="w-full border border-gray-300 px-5 pr-14 py-3 rounded-full outline-none focus:ring-2 focus:ring-primary">
+
+                <!-- Icon inside input -->
+                <i class="fa-solid fa-magnifying-glass absolute right-5 top-1/2 -translate-y-1/2 text-gray-500"></i>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- sidebar -->
+    <!-- Overlay -->
+    <div id="drawerOverlay" class="fixed inset-0 bg-black/40 backdrop-sm z-[999] 
+    opacity-0 invisible transition-all duration-300">
+
+        <!-- Drawer -->
+        <div id="drawer" class="absolute right-[-100%] top-0 h-full w-[340px] bg-white p-8 
+        transition-all duration-500 shadow-2xl flex flex-col overflow-y-auto">
+
+            <!-- Sidebar Header: Logo & X -->
+            <div class="flex justify-between items-center mb-10 w-full">
+                <a href="#">
+                    <img class="h-[50px] w-auto object-contain" src="assets/images/logo.webp" alt="Suxnix Logo">
+                </a>
+                <button id="closeDrawer"
+                    class="text-2xl text-gray-800 hover:text-primary transition-colors focus:outline-none">✕</button>
+            </div>
+
+            <!-- Navigation Menu (Mobile only) -->
+            <nav class="flex flex-col mb-12 desk:hidden ">
+                <a href="#"
+                    class="text-[14px] font-bold text-black py-3 border-b border-gray hover:text-primary transition-colors tracking-wide">Home</a>
+                <a href="#"
+                    class="text-[14px] font-bold text-black py-3 border-b border-gray hover:text-primary transition-colors tracking-wide">Features</a>
+                <a href="#"
+                    class="text-[14px] font-bold text-black py-3 border-b border-gray hover:text-primary transition-colors tracking-wide">Product</a>
+                <a href="#"
+                    class="text-[14px] font-bold text-black py-3 border-b border-gray hover:text-primary transition-colors tracking-wide">Ingredient</a>
+                <a href="#"
+                    class="text-[14px] font-bold text-black py-3 border-b border-gray hover:text-primary transition-colors tracking-wide">Pricing</a>
+                <a href="#"
+                    class="text-[14px] font-bold text-black py-3 border-b border-gray hover:text-primary transition-colors tracking-wide">Shop</a>
+                <a href="#"
+                    class="text-[14px] font-bold text-black py-3 border-b border-gray hover:text-primary transition-colors tracking-wide">News</a>
+                <a href="#"
+                    class="text-[14px] font-bold text-black py-3 border-b border-gray hover:text-primary transition-colors tracking-wide">Contacts</a>
+            </nav>
+
+            <!-- App Content (Exclusively Desktop/Side Info Panel) -->
+            <div class="hidden desk:flex flex-col gap-5 text-gray-700">
+                <h3 class="text-[28px] font-bold text-black font-sans leading-tight">Getting all of the Nutrients
+                    you
+                    need simply cannot be done without supplements.</h3>
+                <p class="text-sm font-semibold leading-relaxed">
+                    Nam libero tempore, cum soluta nobis eligendi cumque quod placeat facere possimus
+                    assumenda omnis dolor repellendu sautem temporibus officiis
+                </p>
+
+                <div class="text-[13px] space-y-2 mt-4">
+                    <p>📞 +1 599 162 4545</p>
+                    <p>📧 info@example.com</p>
+                    <p>📍 5689 Lotaso Terrace, Culver City, CA, United States</p>
+                </div>
+            </div>
+
+            <!-- Social Media Icons (Sticky to Bottom) -->
+            <div class="mt-auto pt-8 border-t border-gray-50">
+                <div class="flex gap-4">
+                    <a href="#"
+                        class="w-10 h-10 rounded-full flex items-center justify-center bg-gray-100 text-gray-700 hover:bg-primary hover:text-white transition-all duration-300">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#"
+                        class="w-10 h-10 rounded-full flex items-center justify-center bg-gray-100 text-gray-700 hover:bg-primary hover:text-white transition-all duration-300">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#"
+                        class="w-10 h-10 rounded-full flex items-center justify-center bg-gray-100 text-gray-700 hover:bg-primary hover:text-white transition-all duration-300">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#"
+                        class="w-10 h-10 rounded-full flex items-center justify-center bg-gray-100 text-gray-700 hover:bg-primary hover:text-white transition-all duration-300">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/script/script.js"></script>
+    <script src="./assets/script/include.js"></script>
+    <script>
+        initIncludes();
+    </script>
+
+</body>
+
+</html>
