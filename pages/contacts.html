@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    screens: {
+                        'desk': '1020px',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#0ca85d',
+                        secondary: '#f89a20',
+                        textGray: '#666a71',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="../assets/style/style.css">
+</head>
+
+<body>
+    <div id="header"></div>
+    <!-- Hero Banner Section -->
+    <section
+        class="relative w-full h-[700px] md:h-[700px] flex items-center justify-center overflow-hidden pt-12 md:pt-20">
+        <!-- Background Image -->
+        <img src="../assets/images/poster_img.jpg" class="absolute inset-0 w-full h-full object-cover">
+
+        <!-- Dark Overlay -->
+        <div class="absolute inset-0 bg-black/75"></div>
+
+        <!-- Content -->
+        <div class="relative z-10 text-center text-white mt-12 md:mt-16">
+            <h1 class="text-4xl md:text-6xl font-bold uppercase mb-4 tracking-[-0.02em] font-sans">CONTACTS</h1>
+            <p class="text-sm md:text-[15px] font-semibold tracking-wide">
+                <a href="../index.html" class="text-white hover:text-primary transition-colors duration-300">Home</a>
+                <span class="mx-2 text-white/50">|</span>
+                <span class="text-primary">Contacts</span>
+            </p>
+        </div>
+
+        <!-- Decorative Bottom Edge -->
+        <div class="absolute -bottom-[1px] left-0 w-full z-20 leading-[0]">
+            <img src="../assets/images/white_bottom_edge.webp" class="w-full object-cover" alt="Edge">
+        </div>
+    </section>
+
+    <!-- Contact Info Cards Section -->
+    <section class="py-20 bg-[#fbfbfb] font-sans relative -mt-5 z-10">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1300px]">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Office Address Card -->
+                <div class="card-side-border bg-white p-12 lg:p-16 flex flex-col items-center justify-center text-center shadow-[0_5px_30px_rgba(0,0,0,0.02)] hover:shadow-[0_15px_40px_rgba(0,0,0,0.06)] transition-shadow duration-300 border border-gray-50">
+                    <div class="relative mb-8">
+                        <i class="fa-regular fa-map text-[60px] text-[#0ca85d]"></i>
+                        <div class="absolute -top-1 -right-3 w-5 h-5 bg-white rounded-full flex items-center justify-center">
+                            <i class="fa-solid fa-check text-[12px] text-[#f89a20]"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-[20px] lg:text-[22px] font-extrabold text-[#202427] uppercase mb-4 tracking-wide">OFFICE ADDRESS</h3>
+                    <p class="text-[15px] text-gray-500 leading-[1.8] font-medium">99 NY Address Street, Brooklyn,<br>United State</p>
+                </div>
+
+                <!-- Phone Number Card -->
+                <div class="bg-white p-12 lg:p-16 flex flex-col items-center justify-center text-center shadow-[0_5px_30px_rgba(0,0,0,0.02)] hover:shadow-[0_15px_40px_rgba(0,0,0,0.06)] transition-shadow duration-300 border border-gray-50">
+                    <div class="relative mb-8">
+                        <i class="fa-solid fa-phone-volume text-[55px] text-[#0ca85d]"></i>
+                        <div class="absolute -top-1 -right-3 w-5 h-5 bg-white rounded-full flex items-center justify-center">
+                            <i class="fa-solid fa-check text-[12px] text-[#f89a20]"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-[20px] lg:text-[22px] font-extrabold text-[#202427] uppercase mb-4 tracking-wide">PHONE NUMBER</h3>
+                    <p class="text-[15px] text-gray-500 leading-[1.8] font-medium">875 7556 464 7658<br>765 648 567 98</p>
+                </div>
+
+                <!-- Web Connect Card -->
+                <div class="bg-white p-12 lg:p-16 flex flex-col items-center justify-center text-center shadow-[0_5px_30px_rgba(0,0,0,0.02)] hover:shadow-[0_15px_40px_rgba(0,0,0,0.06)] transition-shadow duration-300 border border-gray-50">
+                    <div class="relative mb-8">
+                        <i class="fa-solid fa-globe text-[60px] text-[#0ca85d]"></i>
+                        <div class="absolute -top-1 -right-3 w-5 h-5 bg-white rounded-full flex items-center justify-center">
+                            <i class="fa-solid fa-check text-[12px] text-[#f89a20]"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-[20px] lg:text-[22px] font-extrabold text-[#202427] uppercase mb-4 tracking-wide">WEB CONNECT</h3>
+                    <p class="text-[15px] text-gray-500 leading-[1.8] font-medium">info@suxnixmail.com<br>suxnixexample.com</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Map & Contact Form Section -->
+    <section class="py-20 md:py-24 bg-white font-sans">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1300px]">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 lg:gap-20">
+                
+                <!-- Google Maps (Left) -->
+                <div class="w-full h-[500px] md:h-[750px] overflow-hidden shadow-sm border border-gray-100">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.306387423313!2d-73.97762632431714!3d40.6826462713978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25bb3de722141%3A0x6a0ab592dc168b55!2sBarclays%20Center!5e0!3m2!1sen!2sus!4v1700688827725!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <!-- Contact Form (Right) -->
+                <div class="flex flex-col justify-center">
+                    <span class="text-[#f89a20] font-extrabold text-[15px] uppercase tracking-widest mb-4 block">.. REQUEST MAKE ..</span>
+                    <h2 class="text-[32px] md:text-[42px] lg:text-[48px] font-extrabold text-[#202427] uppercase leading-[1.1] mb-12 tracking-wide block max-w-lg">
+                        ASKED ANYTHING YOU WANT TO KNOW
+                    </h2>
+
+                    <form class="flex flex-col gap-8 w-full max-w-[650px]">
+                        <!-- Top Row: Name / Email -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div class="flex flex-col">
+                                <label class="text-[15px] font-bold text-[#202427] mb-3">Name</label>
+                                <input type="text" placeholder="Enter here" class="h-[60px] w-full border border-gray-100 rounded-sm px-6 text-gray-500 focus:outline-none focus:border-[#0ca85d] focus:ring-1 focus:ring-[#0ca85d] transition-all bg-white shadow-[0_2px_15px_rgba(0,0,0,0.015)]">
+                            </div>
+                            <div class="flex flex-col">
+                                <label class="text-[15px] font-bold text-[#202427] mb-3">Email</label>
+                                <input type="email" placeholder="Enter here" class="h-[60px] w-full border border-gray-100 rounded-sm px-6 text-gray-500 focus:outline-none focus:border-[#0ca85d] focus:ring-1 focus:ring-[#0ca85d] transition-all bg-white shadow-[0_2px_15px_rgba(0,0,0,0.015)]">
+                            </div>
+                        </div>
+
+                        <!-- Dropdown -->
+                        <div class="flex flex-col relative group">
+                            <select class="h-[60px] w-full border border-gray-100 rounded-sm px-6 text-gray-500 font-medium appearance-none focus:outline-none focus:border-[#0ca85d] focus:ring-1 focus:ring-[#0ca85d] transition-all bg-white cursor-pointer shadow-[0_2px_15px_rgba(0,0,0,0.015)] relative z-10 bg-transparent">
+                                <option value="" disabled selected>Select Subject **</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="support">Customer Support</option>
+                                <option value="sales">Sales & Pricing</option>
+                            </select>
+                            <!-- White bg layer to ensure chevron is not covered if browser does weird things, though bg-transparent on select might look odd if options dropdown. It's styled fine. -->
+                            
+                            <i class="fa-solid fa-chevron-down absolute right-6 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none text-[12px] z-0"></i>
+                        </div>
+
+                        <!-- Message -->
+                        <div class="flex flex-col">
+                            <label class="text-[15px] font-bold text-[#202427] mb-3">Message</label>
+                            <textarea placeholder="Enter here" class="h-[180px] w-full border border-gray-100 rounded-sm p-6 text-gray-500 resize-y focus:outline-none focus:border-[#0ca85d] focus:ring-1 focus:ring-[#0ca85d] transition-all bg-white shadow-[0_2px_15px_rgba(0,0,0,0.015)]"></textarea>
+                        </div>
+
+                        <button type="submit" class="bg-[#0ca85d] hover:bg-[#f89a20] text-white px-10 h-[60px] rounded-full font-bold text-[16px] transition-colors mt-4 tracking-wide w-fit flex items-center justify-center">
+                            Make Request
+                        </button>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <button id="backToTopBtn" class="fixed bottom-8 right-8 w-14 h-14 rounded-full bg-[#0E9D4D] text-white 
+         flex items-center justify-center shadow-[0_15px_25px_rgba(0,0,0,0.5)] hover:bg-[#0a864a] hover:-translate-y-1 
+         transition-all duration-300 opacity-0 invisible z-50">
+
+        <!-- Arrow Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+        </svg>
+    </button>
+
+    <div id="footer"></div>
+
+    <script src="../assets/script/include.js"></script>
+    <script src="../assets/script/script.js"></script>
+    <script>
+        initIncludes("..");
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suxnix - Power Supplement</title>
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    screens: {
+                        'desk': '1020px',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#0ca85d',
+                        secondary: '#f89a20',
+                        textGray: '#666a71',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="../assets/style/style.css">
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <!-- Cart Layout Section -->
+    <section class="py-16 md:py-24 bg-white font-sans my-36">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1300px]">
+            <div class="flex flex-col lg:flex-row gap-12 xl:gap-20 text-[#202427]">
+                
+                <!-- Left: Cart Table -->
+                <div class="flex-1 w-full overflow-x-auto pb-4">
+                    <table class="w-full text-left border-collapse min-w-[700px]">
+                        <thead>
+                            <tr class="border-b-2 border-black border-opacity-100 uppercase tracking-wide text-[16px] font-bold">
+                                <th class="py-4 px-4 w-[45%] text-center">Product</th>
+                                <th class="py-4 px-4 w-[15%] text-center">Price</th>
+                                <th class="py-4 px-4 w-[20%] text-center">Quantity</th>
+                                <th class="py-4 px-4 w-[15%] text-center">Subtotal</th>
+                                <th class="py-4 px-4 w-[5%]"></th>
+                            </tr>
+                        </thead>
+                        <tbody id="cart-tbody">
+                            <!-- Item 1 -->
+                            <tr class="border-b border-gray-100 cart-item group">
+                                <td class="py-6 px-4">
+                                    <div class="flex items-center justify-center gap-6">
+                                        <div class="w-[80px] h-[80px] bg-white border border-gray-50 rounded-sm flex items-center justify-center p-2 shrink-0">
+                                            <img src="../assets/images/shop5.avif" alt="Product" class="w-full h-full object-contain">
+                                        </div>
+                                        <a href="#" class="font-bold text-[15px] uppercase hover:text-[#0E9D4D] transition-colors cursor-pointer text-left w-[180px]">SERIOUR MASS 2kg</a>
+                                    </div>
+                                </td>
+                                <td class="py-6 px-4 text-center text-gray-500 font-medium price-val" data-price="49.99">Tk 49.99</td>
+                                <td class="py-6 px-4 text-center">
+                                    <div class="flex items-center justify-center border border-gray-100 rounded w-[110px] h-[45px] mx-auto bg-[#fafafa]">
+                                        <button class="w-10 h-10 flex items-center justify-center text-gray-500 hover:text-black font-bold text-xl ease-out transition-colors focus:outline-none qty-minus">-</button>
+                                        <input type="text" value="1" readonly class="qty-input w-10 h-full text-center border-none focus:outline-none font-semibold text-[#202427] bg-transparent">
+                                        <button class="w-10 h-10 flex items-center justify-center text-gray-500 hover:text-black font-bold text-xl ease-out transition-colors focus:outline-none qty-plus">+</button>
+                                    </div>
+                                </td>
+                                <td class="py-6 px-4 text-center text-gray-500 font-medium subtotal-val">Tk 49.99</td>
+                                <td class="py-6 px-4 text-center">
+                                    <button class="text-[#f89a20] hover:text-red-500 transition-colors text-lg focus:outline-none remove-btn">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <!-- Item 2 -->
+                            <tr class="border-b border-gray-100 cart-item group">
+                                <td class="py-6 px-4">
+                                    <div class="flex items-center justify-center gap-6">
+                                        <div class="w-[80px] h-[80px] bg-white border border-gray-50 rounded-sm flex items-center justify-center p-2 shrink-0">
+                                            <img src="../assets/images/shop2.avif" alt="Product" class="w-full h-full object-contain">
+                                        </div>
+                                        <a href="#" class="font-bold text-[15px] uppercase hover:text-[#0E9D4D] transition-colors cursor-pointer text-left w-[180px]">SERIOUR MASS 2kg</a>
+                                    </div>
+                                </td>
+                                <td class="py-6 px-4 text-center text-gray-500 font-medium price-val" data-price="49.99">Tk 49.99</td>
+                                <td class="py-6 px-4 text-center">
+                                    <div class="flex items-center justify-center border border-gray-100 rounded w-[110px] h-[45px] mx-auto bg-[#fafafa]">
+                                        <button class="w-10 h-10 flex items-center justify-center text-gray-500 hover:text-black font-bold text-xl ease-out transition-colors focus:outline-none qty-minus">-</button>
+                                        <input type="text" value="1" readonly class="qty-input w-10 h-full text-center border-none focus:outline-none font-semibold text-[#202427] bg-transparent">
+                                        <button class="w-10 h-10 flex items-center justify-center text-gray-500 hover:text-black font-bold text-xl ease-out transition-colors focus:outline-none qty-plus">+</button>
+                                    </div>
+                                </td>
+                                <td class="py-6 px-4 text-center text-gray-500 font-medium subtotal-val">Tk 49.99</td>
+                                <td class="py-6 px-4 text-center">
+                                    <button class="text-[#f89a20] hover:text-red-500 transition-colors text-lg focus:outline-none remove-btn">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Cart Actions (Coupon & Update) -->
+                    <div class="flex flex-wrap items-center justify-between gap-4 mt-8">
+                        <div class="flex flex-wrap items-center gap-3 w-full sm:w-auto">
+                            <input type="text" placeholder="Coupon code" class="bg-[#f8f8f8] border-none px-6 h-[48px] rounded text-[15px] text-gray-500 focus:outline-none focus:ring-1 focus:ring-[#0E9D4D] w-full sm:w-[200px]">
+                            <button class="bg-[#0E9D4D] hover:bg-[#FAA432] text-white px-8 h-[48px] rounded-full font-bold text-[14px] transition-colors w-full sm:w-auto">Apply Coupon</button>
+                        </div>
+                        <button class="bg-[#0E9D4D] hover:bg-[#FAA432] text-white px-8 h-[48px] rounded-full font-bold text-[14px] transition-colors w-full sm:w-auto" id="update-cart-btn">Update Cart</button>
+                    </div>
+                </div>
+
+                <!-- Right: Cart Totals -->
+                <div class="w-full lg:w-[350px] shrink-0 mt-8 lg:mt-0">
+                    <div class="bg-white border border-gray-100 rounded p-8 shadow-[0_5px_40px_rgba(0,0,0,0.04)]">
+                        <h2 class="text-[22px] font-bold uppercase tracking-tight mb-8">CART TOTALS</h2>
+                        
+                        <div class="flex justify-between items-center py-4 border-b border-gray-100">
+                            <span class="text-[15px] font-bold text-[#202427]">Subtotal</span>
+                            <span class="text-[15px] font-bold text-[#202427]" id="cart-subtotal">Tk 99.98</span>
+                        </div>
+                        
+                        <div class="flex justify-between items-center py-6">
+                            <span class="text-[15px] font-bold text-[#202427]">Total</span>
+                            <span class="text-[20px] font-extrabold text-[#202427]" id="cart-total">Tk 99.98</span>
+                        </div>
+
+                        <button class="w-full bg-[#0E9D4D] hover:bg-[#FAA432] text-white h-[50px] rounded-full font-bold text-[15px] tracking-wide transition-colors mt-2 text-center flex items-center justify-center">
+                            Proceed To Checkout
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div id="footer"></div>
+
+    <script src="../assets/script/include.js"></script>
+    <script src="../assets/script/script.js"></script>
+    <script>
+        initIncludes("..");
+
+        // Cart Page Interactions
+        document.addEventListener("DOMContentLoaded", () => {
+            
+            function updateCartTotals() {
+                const rows = document.querySelectorAll('.cart-item');
+                let total = 0;
+                
+                rows.forEach(row => {
+                    const priceVal = parseFloat(row.querySelector('.price-val').getAttribute('data-price'));
+                    const qty = parseInt(row.querySelector('.qty-input').value) || 1;
+                    const subtotal = priceVal * qty;
+                    
+                    row.querySelector('.subtotal-val').innerText = `Tk ${subtotal.toFixed(2)}`;
+                    total += subtotal;
+                });
+                
+                document.getElementById('cart-subtotal').innerText = `Tk ${total.toFixed(2)}`;
+                document.getElementById('cart-total').innerText = `Tk ${total.toFixed(2)}`;
+            }
+
+            const tbody = document.getElementById('cart-tbody');
+            if (tbody) {
+                tbody.addEventListener('click', (e) => {
+                    // Handle Plus/Minus
+                    const btn = e.target.closest('button');
+                    if (!btn) return;
+                    
+                    const row = btn.closest('.cart-item');
+                    if (!row) return;
+
+                    if (btn.classList.contains('qty-minus') || btn.classList.contains('qty-plus')) {
+                        const input = row.querySelector('.qty-input');
+                        let val = parseInt(input.value) || 1;
+                        
+                        if (btn.classList.contains('qty-minus') && val > 1) {
+                            input.value = val - 1;
+                            updateCartTotals();
+                        } else if (btn.classList.contains('qty-plus')) {
+                            input.value = val + 1;
+                            updateCartTotals();
+                        }
+                    }
+                    
+                    // Handle Remove
+                    if (btn.classList.contains('remove-btn')) {
+                        row.remove();
+                        updateCartTotals();
+                    }
+                });
+            }
+            
+            const updateBtn = document.getElementById('update-cart-btn');
+            if (updateBtn) {
+                updateBtn.addEventListener('click', updateCartTotals);
+            }
+        });
+    </script>
+</body>
+
+</html>

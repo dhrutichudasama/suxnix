@@ -434,6 +434,149 @@ document.addEventListener("componentsLoaded", () => {
         });
     }
 
+    /**
+     * MOBILE SIDEBAR DROPDOWN LOGIC
+     */
+    const mobileDropdowns = document.querySelectorAll('.mobile-dropdown');
+    if (mobileDropdowns.length > 0) {
+        mobileDropdowns.forEach(dropdown => {
+            const btn = dropdown.querySelector('button');
+            const content = dropdown.querySelector('.dropdown-content');
+            const icon = dropdown.querySelector('i');
+            
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                
+                const isOpen = content.classList.contains('opacity-100');
+                
+                // Close all others (Accordion effect)
+                mobileDropdowns.forEach(other => {
+                    const otherContent = other.querySelector('.dropdown-content');
+                    const otherIcon = other.querySelector('i');
+                    if (otherContent !== content) {
+                        otherContent.style.maxHeight = '0px';
+                        otherContent.classList.remove('opacity-100', 'mt-2', 'mb-2');
+                        otherContent.classList.add('opacity-0');
+                        if (otherIcon) otherIcon.classList.remove('rotate-180');
+                    }
+                });
+                
+                // Toggle current
+                if (isOpen) {
+                    content.style.maxHeight = '0px';
+                    content.classList.remove('opacity-100', 'mt-2', 'mb-2');
+                    content.classList.add('opacity-0');
+                    if (icon) icon.classList.remove('rotate-180');
+                } else {
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                    content.classList.add('opacity-100', 'mt-2', 'mb-2');
+                    content.classList.remove('opacity-0');
+                    if (icon) icon.classList.add('rotate-180');
+                }
+            });
+        });
+    }
+
+    /**
+     * SMOOTH SCROLLING FOR REDIRECTS AND ON-PAGE HASHES WITH HEADER OFFSET
+     */
+    const headerOffset = 100; // Account for fixed header height
+
+    function scrollToTarget(target) {
+        if (!target) return;
+        const elementPosition = target.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth"
+        });
+    }
+
+    // 1. Smooth scroll on Load (if coming from another page with hash)
+    if (window.location.hash) {
+        const targetElement = document.querySelector(window.location.hash);
+        if (targetElement) {
+            setTimeout(() => {
+                scrollToTarget(targetElement);
+            }, 100);
+            
+            // Fallback for slower rendering
+            setTimeout(() => {
+                scrollToTarget(targetElement);
+            }, 500);
+        }
+    }
+
+    // 2. Smooth scrolling for Navigation Links (when clicked on the same page)
+    document.querySelectorAll('a[href*="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            try {
+                const linkUrl = new URL(this.href, window.location.href);
+                
+                // Only hijack the click if it's pointing to the current page
+                if (linkUrl.pathname === window.location.pathname && linkUrl.hash) {
+                    const targetElement = document.querySelector(linkUrl.hash);
+                    if (targetElement) {
+                        e.preventDefault();
+                        scrollToTarget(targetElement);
+                        history.pushState(null, null, linkUrl.hash); // Update URL safely
+                    }
+                }
+            } catch (err) {
+                // Ignore parsing errors for empty or invalid hashes
+            }
+        });
+    });
+
+});
+// for scroll
+document.addEventListener("DOMContentLoaded", function () {
+
+    const header = document.querySelector("header"); // your fixed header
+
+    function getHeaderHeight() {
+        return header ? header.offsetHeight : 0;
+    }
+
+    function smoothScrollTo(targetId) {
+        const target = document.querySelector(targetId);
+        if (!target) return;
+
+        const offset = getHeaderHeight();
+        const elementPosition = target.getBoundingClientRect().top + window.pageYOffset;
+        const offsetPosition = elementPosition - offset;
+
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth"
+        });
+    }
+
+    // ✅ Click handling (same page smooth scroll)
+    document.querySelectorAll('a[href*="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            const href = this.getAttribute("href");
+
+            // only handle if same page
+            if (href.includes("#") && (href.startsWith("#") || href.includes("index.html"))) {
+                const id = "#" + href.split("#")[1];
+
+                // agar already index page pe ho
+                if (window.location.pathname.includes("index.html") || window.location.pathname === "/") {
+                    e.preventDefault();
+                    smoothScrollTo(id);
+                }
+            }
+        });
+    });
+
+    // ✅ Page load pe smooth scroll (jab dusre page se aaye ho)
+    if (window.location.hash) {
+        setTimeout(() => {
+            smoothScrollTo(window.location.hash);
+        }, 200); // slight delay for DOM load
+    }
+
 });
 
 // footer

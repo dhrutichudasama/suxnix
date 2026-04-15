@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suxnix - Power Supplement</title>
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    screens: {
+                        'desk': '1020px',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#0ca85d',
+                        secondary: '#f89a20',
+                        textGray: '#666a71',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="../assets/style/style.css">
+</head>
+
+<body>
+    <div id="header"></div>
+    <!-- Hero Banner Section -->
+    <section
+        class="relative w-full h-[500px] md:h-[600px] flex items-center justify-center overflow-hidden pt-12 md:pt-20">
+        <!-- Background Image -->
+        <img src="../assets/images/poster_img.jpg" class="absolute inset-0 w-full h-full object-cover">
+
+        <!-- Dark Overlay -->
+        <div class="absolute inset-0 bg-black/75"></div>
+
+        <!-- Content -->
+        <div class="relative z-10 text-center text-white mt-12 md:mt-16">
+            <h1 class="text-4xl md:text-6xl font-bold uppercase mb-4 tracking-[-0.02em] font-sans">CREATE ACCOUNT</h1>
+            <p class="text-sm md:text-[15px] font-semibold tracking-wide">
+                <a href="../index.html" class="text-white hover:text-primary transition-colors duration-300">Home</a>
+                <span class="mx-2 text-white/50">|</span>
+                <span class="text-primary">register</span>
+            </p>
+        </div>
+
+        <!-- Decorative Bottom Edge -->
+        <div class="absolute -bottom-[1px] left-0 w-full z-20 leading-[0]">
+            <img src="../assets/images/white_bottom_edge.webp" class="w-full object-cover" alt="Edge">
+        </div>
+    </section>
+
+    <!-- Login Section -->
+    <section class="py-16 md:py-24 font-sans bg-white flex justify-center">
+        <div
+            class="w-full max-w-[500px] bg-[#f8f8f8] p-8 md:p-12 rounded border border-gray-100 shadow-[0_5px_40px_rgba(0,0,0,0.03)] text-[#202427] text-center">
+
+            <h2 class="text-[28px] md:text-[32px] font-bold uppercase tracking-tight mb-4">CREATE YOUR ACCOUNT</h2>
+
+            <p class="text-[14px] md:text-[15px] text-gray-500 mb-8 leading-relaxed">
+                Hey there! Ready to join the party? We just need a few details from you to get started. Let's do this!
+            </p>
+
+            <!-- Form -->
+            <form>
+                <div class="mb-4 text-left grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <!-- First Name -->
+                    <div>
+                        <label class="block text-[15px] font-bold text-[#202427] mb-2">First Name</label>
+                        <input type="text" placeholder="First Name"
+                            class="w-full h-[50px] px-4 rounded border-none focus:ring-1 focus:ring-[#0E9D4D] focus:outline-none shadow-sm text-[15px] text-gray-600 bg-white">
+                    </div>
+                    <!-- Last Name -->
+                    <div>
+                        <label class="block text-[15px] font-bold text-[#202427] mb-2">Last Name</label>
+                        <input type="text" placeholder="Last Name"
+                            class="w-full h-[50px] px-4 rounded border-none focus:ring-1 focus:ring-[#0E9D4D] focus:outline-none shadow-sm text-[15px] text-gray-600 bg-white">
+                    </div>
+
+                </div>
+
+                <div class="mb-4 text-left">
+                    <label class="block text-[15px] font-bold text-[#202427] mb-2">Email</label>
+                    <input type="email" placeholder="email"
+                        class="w-full h-[50px] px-4 rounded border-none focus:ring-1 focus:ring-[#0E9D4D] focus:outline-none shadow-sm text-[15px] text-gray-600 bg-white">
+                </div>
+
+                <div class="mb-5 text-left">
+                    <label class="block text-[15px] font-bold text-[#202427] mb-2">Password</label>
+                    <input type="password" placeholder="Password"
+                        class="w-full h-[50px] px-4 rounded border-none focus:ring-1 focus:ring-[#0E9D4D] focus:outline-none shadow-sm text-[15px] text-gray-600 bg-white">
+                </div>
+
+                <div class="mb-5 text-left">
+                    <label class="block text-[15px] font-bold text-[#202427] mb-2">Confirm Password</label>
+                    <input type="password" placeholder="Confirm password"
+                        class="w-full h-[50px] px-4 rounded border-none focus:ring-1 focus:ring-[#0E9D4D] focus:outline-none shadow-sm text-[15px] text-gray-600 bg-white">
+                </div>
+
+                <button type="button"
+                    class="relative overflow-hidden w-full h-[50px] bg-[#0E9D4D] text-white rounded-full font-bold text-[16px] tracking-wide mb-8 group">
+                    <span class="relative z-10">Sign Up</span>
+
+                    <!-- Water Layer -->
+                    <span
+                        class="absolute left-0 bottom-0 w-full h-0 bg-orange-500 transition-all duration-500 ease-in-out group-hover:h-full z-0"></span>
+                </button>
+
+                <div class="text-[14px] text-gray-500">
+                    Already have an account? <a href="login.html"
+                        class="text-[#f89a20] hover:text-[#0E9D4D] transition-colors underline-offset-4 hover:underline">Sign
+                        In</a>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <button id="backToTopBtn" class="fixed bottom-8 right-8 w-14 h-14 rounded-full bg-[#0E9D4D] text-white 
+         flex items-center justify-center shadow-[0_15px_25px_rgba(0,0,0,0.5)] hover:bg-[#0a864a] hover:-translate-y-1 
+         transition-all duration-300 opacity-0 invisible z-50">
+
+        <!-- Arrow Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+        </svg>
+    </button>
+
+    <div id="footer"></div>
+
+    <script src="../assets/script/include.js"></script>
+    <script src="../assets/script/script.js"></script>
+    <script>
+        initIncludes("..");
+    </script>
+</body>
+
+</html>
